@@ -137,6 +137,97 @@ a {
   margin-left: auto;
 }
 
+/* ===== Banner 2 ===== */
+
+.problems-band {
+  background-color: #eef2f0; /* graue Fläche über die volle Breite */
+  margin-top: 6rem;
+  padding: 5rem 0;
+}
+
+.problems {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 4rem;
+}
+
+.problems-intro h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+}
+
+.problems-intro p {
+  margin-top: 1rem;
+  color: #4a675d;
+  line-height: 1.6;
+}
+
+.problems-list {
+  list-style: none;
+}
+
+.problem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #d6e4de;
+}
+
+.problem:first-child {
+  padding-top: 0;
+}
+
+.problem:last-child {
+  border-bottom: none;
+}
+
+.problem-text {
+  flex: 1;
+}
+
+.problem-text h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.problem-text p {
+  margin-top: 0.3rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #4a675d;
+}
+
+.logo-stack {
+  display: flex;
+  padding-left: 10px;
+}
+
+.logo-stack span {
+  width: 40px;
+  height: 40px;
+  margin-left: -10px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #eef2f0;
+  display: grid;
+  place-items: center;
+}
+
+.logo-stack img {
+  width: 20px;
+  height: 20px;
+}
+
+.problem-chart {
+  width: 100px;
+  height: 38px;
+  flex-shrink: 0;
+}
+
 /* ===== Rechtliches (Impressum & Datenschutz) ===== */
 
 .legal h1 {
@@ -225,7 +316,18 @@ a {
   }
 
   .hero-image img {
-    margin: 0 auto; 
+    margin: 0 auto;
+  }
+
+  /* --- Handy: Banner 2 --- */
+  .problems-band {
+    margin-top: 4rem;
+    padding: 3rem 0;
+  }
+
+  .problems {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   /* --- Handy: Footer --- */
