@@ -134,7 +134,23 @@ a {
   width: 100%;
   max-width: 440px;
   height: auto;
-  margin-left: auto; 
+  margin-left: auto;
+}
+
+/* ===== Rechtliches (Impressum & Datenschutz) ===== */
+
+.legal h1 {
+  margin-bottom: 2rem;
+}
+
+.legal h2 {
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.legal p {
+  line-height: 1.7;
 }
 
 /* ===== Footer ===== */
