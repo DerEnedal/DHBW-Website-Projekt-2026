@@ -228,6 +228,115 @@ a {
   flex-shrink: 0;
 }
 
+/* ===== Banner 3 ===== */
+
+.features {
+  padding-top: 6rem;
+}
+
+/* Radio-Buttons unsichtbar, aber per Tastatur bedienbar */
+.feature-radio {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 4rem;
+  align-items: end;
+}
+
+.features-text {
+  padding-bottom: 3rem;
+}
+
+.features-text h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  margin-bottom: 2rem;
+}
+
+.feature-tab {
+  padding: 1.1rem 0;
+  border-top: 1px solid #d9e2de;
+}
+
+.feature-tab:last-child {
+  border-bottom: 1px solid #d9e2de;
+}
+
+.feature-tab label {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  color: #9ab0a7;
+  cursor: pointer;
+}
+
+.feature-tab label:hover {
+  color: #0f3d2e;
+}
+
+.feature-desc {
+  display: none;
+}
+
+.feature-desc p {
+  margin: 0.6rem 0 0.8rem;
+  line-height: 1.6;
+  color: #4a675d;
+}
+
+.features-image img {
+  display: none;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  margin-left: auto;
+}
+
+/* Aktiver Tab: Linie, dunkler Text, Beschreibung und passendes Bild */
+#feature-1:checked ~ .features-grid .tab-1,
+#feature-2:checked ~ .features-grid .tab-2,
+#feature-3:checked ~ .features-grid .tab-3,
+#feature-4:checked ~ .features-grid .tab-4 {
+  border-top: 2px solid #0f3d2e;
+}
+
+#feature-1:checked ~ .features-grid .tab-1 label,
+#feature-2:checked ~ .features-grid .tab-2 label,
+#feature-3:checked ~ .features-grid .tab-3 label,
+#feature-4:checked ~ .features-grid .tab-4 label {
+  color: #0f3d2e;
+}
+
+#feature-1:checked ~ .features-grid .tab-1 .feature-desc,
+#feature-2:checked ~ .features-grid .tab-2 .feature-desc,
+#feature-3:checked ~ .features-grid .tab-3 .feature-desc,
+#feature-4:checked ~ .features-grid .tab-4 .feature-desc {
+  display: block;
+}
+
+#feature-1:checked ~ .features-grid .image-1,
+#feature-2:checked ~ .features-grid .image-2,
+#feature-3:checked ~ .features-grid .image-3,
+#feature-4:checked ~ .features-grid .image-4 {
+  display: block;
+}
+
+/* Tastatur-Fokus sichtbar machen */
+#feature-1:focus-visible ~ .features-grid .tab-1 label,
+#feature-2:focus-visible ~ .features-grid .tab-2 label,
+#feature-3:focus-visible ~ .features-grid .tab-3 label,
+#feature-4:focus-visible ~ .features-grid .tab-4 label {
+  outline: 2px solid #3a9d6b;
+  outline-offset: 4px;
+}
+
 /* ===== Rechtliches (Impressum & Datenschutz) ===== */
 
 .legal h1 {
@@ -328,6 +437,24 @@ a {
   .problems {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  /* --- Handy: Banner 3 --- */
+  .features {
+    padding-top: 4rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr; /* Bild unter die Tabs */
+    gap: 1rem;
+  }
+
+  .features-text {
+    padding-bottom: 0;
+  }
+
+  .features-image img {
+    margin: 0 auto;
   }
 
   /* --- Handy: Footer --- */
