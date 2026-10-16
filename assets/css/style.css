@@ -444,6 +444,72 @@ a {
   margin-left: auto;
 }
 
+/* ===== Über uns: Banner 1 ===== */
+
+.about-label {
+  font-size: 0.9rem;
+  color: #3a9d6b;
+  margin-bottom: 0.75rem;
+}
+
+.about-hero h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  font-weight: 500;
+  line-height: 1.04;
+  letter-spacing: -0.015em;
+}
+
+.about-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+  aspect-ratio: 3 / 1; /* flach und breit wie im Entwurf */
+  margin: 2.5rem 0;
+  border-radius: 24px;
+  background-color: #d2ddd8;
+  color: #4a675d;
+  font-size: 1rem;
+}
+
+.about-story {
+  display: grid;
+  grid-template-columns: 1.6fr 0.7fr;
+  gap: 3rem;
+}
+
+.about-story p {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: #4a675d;
+}
+
+.about-facts {
+  list-style: none;
+  border-left: 1px solid #d9e2de;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.about-facts strong {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #0f3d2e;
+}
+
+.about-facts span {
+  font-size: 0.9rem;
+  color: #6b857b;
+}
+
 /* ===== Rechtliches (Impressum & Datenschutz) ===== */
 
 .legal h1 {
@@ -581,6 +647,25 @@ a {
 
   .newsletter-image img {
     margin: 0 auto;
+  }
+
+  /* --- Handy: Über uns Banner 1 --- */
+  .about-photo {
+    aspect-ratio: 4 / 3;
+  }
+
+  .about-story {
+    grid-template-columns: 1fr; /* Fakten unter den Text */
+    gap: 1.5rem;
+  }
+
+  .about-facts {
+    flex-direction: row;
+    gap: 2rem;
+    border-left: none;
+    border-top: 1px solid #d9e2de;
+    padding-left: 0;
+    padding-top: 1.25rem;
   }
 
   /* --- Handy: Footer --- */
