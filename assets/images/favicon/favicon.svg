@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 104 104">
+  <defs>
+    <!-- Schlitz oben und unten im C -->
+    <mask id="ring-gap" maskUnits="userSpaceOnUse" x="-2" y="-2" width="104" height="104">
+      <rect x="-2" y="-2" width="104" height="104" fill="#fff"/>
+      <rect x="50.5" y="-2" width="4" height="104" fill="#000"/>
+    </mask>
+    <!-- Kreis innen mit Trennfugen -->
+    <clipPath id="disk">
+      <circle cx="50" cy="50" r="25"/>
+    </clipPath>
+    <mask id="disk-gaps" maskUnits="userSpaceOnUse" x="-2" y="-2" width="104" height="104">
+      <rect x="-2" y="-2" width="104" height="104" fill="#fff"/>
+      <rect x="51.5" y="0" width="2.5" height="47.5" fill="#000"/>
+      <rect x="51.5" y="45.7" width="50" height="3.6" fill="#000"/>
+    </mask>
+    <!-- Bogen, der das Grüne vom Grauen trennt -->
+    <mask id="green-cut" maskUnits="userSpaceOnUse" x="-2" y="-2" width="104" height="104">
+      <rect x="-2" y="-2" width="104" height="104" fill="#fff"/>
+      <circle cx="32" cy="49.6" r="18" fill="#000"/>
+    </mask>
+  </defs>
+
+  <!-- Äußeres C, rechts offen -->
+  <circle cx="50" cy="50" r="39.3" fill="none" stroke="#0f3d2e" stroke-width="19.4"
+          stroke-dasharray="185.2 61.7" stroke-dashoffset="-30.9" mask="url(#ring-gap)"/>
+
+  <!-- Innerer Kreis -->
+  <g clip-path="url(#disk)" mask="url(#disk-gaps)">
+    <rect width="100" height="100" fill="#e6efec"/>
+    <rect x="54" y="0" width="46" height="45.7" fill="#8fd3f4"/>
+    <rect x="0" y="49.3" width="100" height="51" fill="#34996a" mask="url(#green-cut)"/>
+  </g>
+</svg>
