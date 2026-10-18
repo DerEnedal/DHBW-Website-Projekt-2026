@@ -543,6 +543,231 @@ a {
   color: #6b857b;
 }
 
+/* ===== Funktionen: Grundlagen ===== */
+
+.main.main-features {
+  padding: 0; /* Abschnitte gehen bis an den Rand */
+}
+
+.main-features h1,
+.main-features h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.main-features .eyebrow {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #3a9d6b;
+  margin-bottom: 0.75rem;
+}
+
+.main-features .lead {
+  font-size: 1.2rem;
+  line-height: 1.55;
+  color: #555555;
+}
+
+.link-arrow {
+  font-weight: 600;
+}
+
+.link-arrow::after {
+  content: " ›";
+  color: #3a9d6b;
+}
+
+/* ===== Funktionen: Banner 1 (Hero) ===== */
+
+.features-hero {
+  text-align: center;
+  padding-top: 5rem;
+  overflow: hidden; /* Handys unten abschneiden */
+}
+
+.features-hero h1 {
+  font-size: clamp(3rem, 7vw, 5.25rem);
+  line-height: 0.98;
+}
+
+.features-hero .lead {
+  max-width: 520px;
+  margin: 1.4rem auto 2rem;
+}
+
+.features-hero .hero-actions {
+  justify-content: center;
+  gap: 1.75rem;
+}
+
+.phone-fan {
+  position: relative;
+  height: 440px;
+  margin-top: 4rem;
+}
+
+.phone-fan img {
+  position: absolute;
+  width: 280px;
+  height: auto;
+}
+
+.phone-fan-center {
+  left: 50%;
+  top: 0;
+  width: 310px !important;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.phone-fan-left {
+  left: calc(50% - 380px);
+  top: 50px;
+  transform: rotate(-7deg);
+}
+
+.phone-fan-right {
+  left: calc(50% + 100px);
+  top: 50px;
+  transform: rotate(7deg);
+}
+
+/* Kapitelnavigation unter dem Hero */
+.chapter-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+  padding: 1.5rem 1rem;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.chapter-nav a {
+  font-size: 0.9rem;
+  padding: 0.3rem 0;
+  border-bottom: 2px solid transparent;
+}
+
+.chapter-nav a:hover {
+  border-bottom-color: #3a9d6b;
+}
+
+/* ===== Funktionen: Banner 2–8 (Funktionsabschnitte) ===== */
+
+.feature {
+  padding-top: 6rem;
+  overflow: hidden; /* Handy unten abschneiden */
+  background-color: #ffffff;
+}
+
+.feature-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+/* Bild links, Text rechts */
+.feature-flip .feature-text {
+  order: 2;
+}
+
+.feature h2 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  line-height: 1.02;
+}
+
+.feature .lead {
+  max-width: 430px;
+  margin: 1.25rem 0 1.6rem;
+}
+
+.feature-facts {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  max-width: 430px;
+  padding-top: 1.4rem;
+  border-top: 1px solid #e5e5e5;
+}
+
+.feature-facts strong {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.feature-facts span {
+  font-size: 0.85rem;
+  color: #8a8a8a;
+}
+
+.feature-image {
+  position: relative;
+  height: 520px;
+}
+
+/* Grüner Kreis hinter dem Handy */
+.feature-image::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 60px;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-color: #e8f4ee;
+  transform: translateX(-50%);
+}
+
+.feature-image img {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 280px;
+  height: auto;
+  transform: translateX(-50%);
+}
+
+/* Hintergrund-Varianten */
+.feature-grey {
+  background-color: #f5f5f5;
+}
+
+.feature-dark {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.feature-dark .lead {
+  color: #a8a8a8;
+}
+
+.feature-dark .feature-facts {
+  border-top-color: #2b2b2b;
+}
+
+.feature-dark .feature-image::before {
+  background-color: #1c2b24;
+}
+
+/* ===== Funktionen: Banner 9 (Abschluss) ===== */
+
+.features-cta {
+  text-align: center;
+  padding: 7rem 0;
+}
+
+.features-cta h2 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.02;
+  margin-bottom: 1.75rem;
+}
+
 /* ===== Rechtliches (Impressum & Datenschutz) ===== */
 
 .legal h1 {
@@ -706,6 +931,56 @@ a {
     border-top: 1px solid #d9e2de;
     padding-left: 0;
     padding-top: 1.25rem;
+  }
+
+  /* --- Handy: Funktionen Banner 1 (Hero) --- */
+  .features-hero {
+    padding-top: 3rem;
+  }
+
+  .phone-fan {
+    height: 360px;
+    margin-top: 2.5rem;
+  }
+
+  .phone-fan-left,
+  .phone-fan-right {
+    display: none; /* auf dem Handy nur ein Handy zeigen */
+  }
+
+  .phone-fan-center {
+    width: 240px !important;
+  }
+
+  .chapter-nav {
+    gap: 0.4rem 1.2rem;
+  }
+
+  /* --- Handy: Funktionen Banner 2–8 --- */
+  .feature {
+    padding-top: 4rem;
+  }
+
+  .feature-inner {
+    grid-template-columns: 1fr; /* Bild unter den Text */
+    gap: 2.5rem;
+  }
+
+  .feature-flip .feature-text {
+    order: 0;
+  }
+
+  .feature-image {
+    height: 420px;
+  }
+
+  .feature-image::before {
+    width: 300px;
+    height: 300px;
+  }
+
+  .feature-image img {
+    width: 230px;
   }
 
   /* --- Handy: Footer --- */
