@@ -38,14 +38,14 @@
     </div>
   </header>
 
-  <main class="main">
-    <div class="container">
+  <main class="main main-features">
 
-      <!-- ===== Über uns: Banner 1 ===== -->
-      <section class="about-hero">
+    <!-- ===== Banner 1: Hero ===== -->
+    <section class="about-hero">
+      <div class="container">
 
         <p class="eyebrow">Über uns</p>
-        <h1>Vier Studierende, eine Idee.</h1>
+        <h1>Vier Studierende,<br><em>eine</em> Idee.</h1>
 
         <!-- Platzhalter: später durch das Teamfoto ersetzen -->
         <div class="about-photo">
@@ -56,6 +56,12 @@
             <path d="M14 14l1-1c1-1 2-1 3 0l3 3"/>
           </svg>
           <span>Teamfoto, volle Breite</span>
+
+          <!-- Runder Sticker auf dem Foto -->
+          <div class="about-sticker">
+            <span>Made in<br>Heidenheim</span>
+            <small>Seit 2026</small>
+          </div>
         </div>
 
         <div class="about-story">
@@ -78,9 +84,137 @@
           </ul>
         </div>
 
-      </section>
+      </div>
+    </section>
 
-    </div>
+    <!-- ===== Banner 2: Mission (Manifest) ===== -->
+    <section class="band mission">
+      <div class="container">
+        <p class="eyebrow">Unsere Mission</p>
+        <h2>Geld sollte niemanden überfordern. Darum ist Centora <mark>einfach</mark>, <mark>transparent</mark> und <mark>sicher</mark> – und nichts davon ist verhandelbar.</h2>
+
+        <ul class="mission-values">
+          <li>
+            <strong>Einfach</strong>
+            <p>Keine Fachbegriffe, keine Tabellen. Nur das, was du wirklich wissen musst.</p>
+          </li>
+          <li>
+            <strong>Transparent</strong>
+            <p>Du siehst immer, was mit deinem Geld und deinen Daten passiert.</p>
+          </li>
+          <li>
+            <strong>Sicher</strong>
+            <p>Nur Lesezugriff, verschlüsselt und in der EU gespeichert.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Banner 3: Das Team (Jahrbuch) ===== -->
+    <section class="team">
+      <div class="container">
+        <div class="team-head">
+          <h2>Das Team.</h2>
+          <span>DHBW Heidenheim · Jahrgang 2026</span>
+        </div>
+
+        <ul class="team-grid">
+          <li class="member">
+            <div class="member-photo">Foto</div>
+            <strong>Vorname Nachname</strong>
+            <p class="member-role">Idee &amp; Produkt</p>
+            <p class="member-quote">„Hatte die Idee nach drei Abo-Abbuchungen an einem Tag.“</p>
+          </li>
+          <li class="member">
+            <div class="member-photo">Foto</div>
+            <strong>Vorname Nachname</strong>
+            <p class="member-role">Design</p>
+            <p class="member-quote">„Zahlen dürfen nicht nach Steuererklärung aussehen.“</p>
+          </li>
+          <li class="member">
+            <div class="member-photo">Foto</div>
+            <strong>Vorname Nachname</strong>
+            <p class="member-role">Entwicklung</p>
+            <p class="member-quote">„Baut die Website – ganz ohne JavaScript.“</p>
+          </li>
+          <li class="member">
+            <div class="member-photo">Foto</div>
+            <strong>Vorname Nachname</strong>
+            <p class="member-role">Finanzen</p>
+            <p class="member-quote">„Rechnet nach, ob der Zinseszins stimmt.“</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Banner 4: Unsere Geschichte (Zeitleiste) ===== -->
+    <section class="band timeline">
+      <div class="container">
+        <p class="eyebrow">Unsere Geschichte</p>
+        <h2>Von der Idee zur App.</h2>
+
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <span class="timeline-dot"></span>
+            <p class="timeline-date">September 2026</p>
+            <h3>Die Frage</h3>
+            <p>Erstes Semester, erste eigene Finanzen – und kein Überblick.</p>
+          </li>
+          <li class="timeline-item timeline-now">
+            <span class="timeline-dot"></span>
+            <p class="timeline-date">Oktober 2026</p>
+            <h3>Die Idee</h3>
+            <p>Skizzen, Entwürfe und der Name Centora.</p>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-dot"></span>
+            <p class="timeline-date">November 2026</p>
+            <h3>Die Website</h3>
+            <p>Centora bekommt ein Zuhause im Netz.</p>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-dot"></span>
+            <p class="timeline-date">Dezember 2026</p>
+            <h3>Die Präsentation</h3>
+            <p>Vorstellung an der DHBW Heidenheim.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Banner 5: Unser Partner ===== -->
+    <section class="partner">
+      <div class="container partner-inner">
+        <div>
+          <p class="eyebrow">Unser Partner</p>
+          <h2>Beratung mit<br>echten Menschen.</h2>
+          <p class="lead">Für persönliche Fragen arbeiten wir mit Tauris zusammen. Termin direkt in der App buchen – per Chat, Video oder Telefon.</p>
+          <a href="funktionen.html#beratung" class="link-arrow">Zur Beratung</a>
+        </div>
+
+        <div class="partner-card">
+          <img src="../assets/images/ueber-uns/banner-5/johannes-beringer.png" alt="Johannes Beringer">
+          <div>
+            <strong>Johannes Beringer</strong>
+            <p class="partner-role">Finanzberater · Tauris</p>
+            <p class="partner-quote">„Gern schauen wir uns deine Sparrate gemeinsam an.“</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Banner 6: Abschluss ===== -->
+    <section class="cta-dark">
+      <div class="container">
+        <h2>Lust auf Centora?</h2>
+        <p>Probier die App aus – oder schreib uns, was du denkst.</p>
+        <div class="hero-actions">
+          <a href="jetzt-starten.html" class="btn btn-lg">Jetzt starten</a>
+          <a href="mailto:daniel@rosenberger.click" class="link-arrow">Kontakt aufnehmen</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">
