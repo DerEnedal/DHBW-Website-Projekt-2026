@@ -9,6 +9,7 @@
   --color-primary: #0f3d2e;        /* Dunkelgrün: Text, Buttons */
   --color-accent: #3a9d6b;         /* Akzentgrün: Hover, Eyebrow, Linien */
   --color-accent-soft: #e8f4ee;    /* zarter Grünton hinter Handys */
+  --color-accent-light: #7fd8a6;   /* helles Grün auf dunklen Flächen */
 
   /* Flächen (neutral, wie auf der Funktionen-Seite) */
   --color-bg: #ffffff;             /* Seitenhintergrund */
@@ -80,10 +81,13 @@ h2 {
   letter-spacing: -0.02em;
 }
 
-/* Abschnitts-Überschriften auf der Startseite */
+/* Abschnitts-Überschriften (Startseite und Sicherheit) */
 .problems-intro h2,
 .features-text h2,
-.newsletter-text h2 {
+.newsletter-text h2,
+.promises-intro h2,
+.data-flow h2,
+.faq h2 {
   font-size: clamp(2rem, 3.5vw, 2.75rem);
 }
 
@@ -833,6 +837,335 @@ h2 {
   margin-bottom: 1.75rem;
 }
 
+/* ===== Sicherheit: Grundlagen ===== */
+
+/* Eingebettete SVG-Symbole (Schloss, Auge, Pin …) */
+.floating-card svg,
+.promise-icon svg,
+.flow-step svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ===== Sicherheit: Banner 1 (Hero) ===== */
+
+.security-hero {
+  padding-top: 4rem;
+  overflow: hidden; /* Handy unten abschneiden */
+}
+
+.security-hero-inner {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.security-hero-text {
+  padding-bottom: 4rem;
+}
+
+.security-hero h1 {
+  font-size: clamp(3rem, 6vw, 4.4rem);
+}
+
+.security-hero .lead {
+  max-width: 480px;
+  margin: 1.4rem 0 2rem;
+}
+
+.security-hero-image {
+  height: 560px;
+}
+
+/* Kleine schwebende Karten neben dem Handy */
+.floating-card {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 0.9rem;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.floating-card svg {
+  width: 20px;
+  height: 20px;
+  color: var(--color-accent);
+}
+
+.floating-card span {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--color-text-soft);
+}
+
+.floating-card strong {
+  font-size: 0.9rem;
+}
+
+.floating-card-left {
+  left: 0;
+  top: 180px;
+}
+
+.floating-card-right {
+  right: -10px;
+  top: 400px;
+}
+
+/* ===== Sicherheit: Banner 2 (Drei Versprechen) ===== */
+
+.promises-band {
+  margin-top: 0; /* direkt unter dem Hero */
+  padding: 5.5rem 0;
+}
+
+.promises {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 4rem;
+}
+
+.promises-intro .lead {
+  margin-top: 1rem;
+}
+
+.promises-list {
+  list-style: none;
+}
+
+.promise {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.4rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--color-border-strong);
+}
+
+.promise:first-child {
+  padding-top: 0;
+}
+
+.promise:last-child {
+  border-bottom: none;
+}
+
+.promise-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background-color: var(--color-white);
+}
+
+.promise-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.promise h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.promise p {
+  margin-top: 0.3rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+}
+
+/* ===== Sicherheit: Banner 3–5 (nutzen .feature von der Funktionen-Seite) ===== */
+
+.feature-checks {
+  list-style: none;
+  max-width: 430px;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.feature-checks li {
+  display: flex;
+  gap: 0.6rem;
+  padding: 0.35rem 0;
+}
+
+.feature-checks li::before {
+  content: "✓";
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+/* ===== Sicherheit: Banner 6 (So funktioniert's) ===== */
+
+.data-flow {
+  margin-top: 0;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.data-flow .lead {
+  max-width: 560px;
+  margin: 1rem auto 3rem;
+}
+
+.flow-steps {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+}
+
+.flow-step {
+  position: relative;
+  padding: 1.5rem 1rem;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+}
+
+/* Pfeil zwischen den Schritten */
+.flow-step:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  right: -1.9rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+  color: var(--color-accent);
+}
+
+.flow-step svg {
+  width: 30px;
+  height: 30px;
+}
+
+.flow-step strong {
+  display: block;
+  margin-top: 0.6rem;
+}
+
+.flow-step span {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  color: var(--color-text-soft);
+}
+
+/* Letzter Schritt dunkel hervorgehoben */
+.flow-step-highlight {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.flow-step-highlight svg {
+  color: var(--color-accent-light);
+}
+
+.flow-step-highlight span {
+  color: var(--color-footer-text);
+}
+
+/* ===== Sicherheit: Banner 7 (Häufige Fragen) ===== */
+
+.faq {
+  padding: 6rem 0;
+}
+
+.faq-inner {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 4rem;
+}
+
+.faq details {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--color-border-strong);
+}
+
+.faq details:first-of-type {
+  padding-top: 0;
+}
+
+.faq summary {
+  list-style: none; /* Standard-Dreieck ausblenden */
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq summary::after {
+  content: "+";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--color-accent);
+}
+
+.faq details[open] summary::after {
+  content: "–";
+}
+
+.faq details p {
+  max-width: 520px;
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+
+/* ===== Sicherheit: Banner 8 (Abschluss) ===== */
+
+.security-cta {
+  padding: 6rem 0;
+  text-align: center;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+.security-cta h2 {
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.security-cta p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: var(--color-dark-muted);
+}
+
+.security-cta .hero-actions {
+  justify-content: center;
+}
+
+.security-cta .btn {
+  background-color: var(--color-white);
+  color: var(--color-dark);
+}
+
+.security-cta .btn:hover {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
 /* ===== Rechtliches (Impressum & Datenschutz) ===== */
 
 .legal h1 {
@@ -1063,6 +1396,47 @@ h2 {
 
   .feature-image img {
     width: 230px;
+  }
+
+  /* --- Handy: Sicherheit --- */
+  .security-hero-inner,
+  .promises,
+  .faq-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .security-hero-text {
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  .security-hero .lead {
+    margin: 1.4rem auto 2rem;
+  }
+
+  .security-hero-image {
+    height: 440px;
+  }
+
+  .floating-card {
+    display: none;
+  }
+
+  .promises-band,
+  .data-flow,
+  .faq,
+  .security-cta {
+    padding: 4rem 0;
+  }
+
+  .flow-steps {
+    grid-template-columns: 1fr 1fr; /* 2 × 2 statt 4 nebeneinander */
+    gap: 1rem;
+  }
+
+  .flow-step::after {
+    display: none; /* Pfeile auf dem Handy ausblenden */
   }
 
   /* --- Handy: Footer --- */
