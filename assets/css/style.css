@@ -109,7 +109,6 @@ h2 {
 }
 
 /* Große Bilder rechts in einem Abschnitt */
-.hero-image img,
 .features-image img,
 .newsletter-image img {
   display: block;
@@ -283,8 +282,67 @@ h2 {
   gap: 1.5rem;
 }
 
-.hero-image img {
-  max-width: 440px;
+/* Zwei Handys: Konten vorne, Sparziele schräg dahinter */
+.hero-phones {
+  position: relative;
+  height: 560px;
+}
+
+/* Grüner Kreis hinter den Handys */
+.hero-phones::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 70px;
+  width: 440px;
+  height: 440px;
+  border-radius: 50%;
+  background-color: var(--color-accent-soft);
+  transform: translateX(-50%);
+}
+
+.hero-phone-back,
+.hero-phone-front {
+  position: absolute;
+  height: auto;
+}
+
+.hero-phone-back {
+  left: 8%;
+  top: 60px;
+  width: 240px;
+  transform: rotate(-8deg);
+}
+
+.hero-phone-front {
+  right: 6%;
+  top: 0;
+  width: 280px;
+  z-index: 2;
+}
+
+/* Kleine schwebende Karte */
+.hero-badge {
+  position: absolute;
+  right: -20px;
+  top: 470px;
+  z-index: 3;
+  padding: 0.6rem 0.9rem;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.hero-badge span {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--color-text-soft);
+}
+
+.hero-badge strong {
+  font-size: 0.85rem;
+  color: var(--color-accent);
 }
 
 /* ===== Startseite: Banner 2 ===== */
@@ -839,7 +897,6 @@ h2 {
     margin-top: 4rem;
   }
 
-  .hero-image img,
   .features-image img,
   .newsletter-image img {
     margin: 0 auto;
@@ -878,6 +935,27 @@ h2 {
 
   .hero-actions {
     justify-content: center;
+  }
+
+  .hero-phones {
+    height: 460px;
+  }
+
+  .hero-phones::before {
+    width: 320px;
+    height: 320px;
+  }
+
+  .hero-phone-back,
+  .hero-badge {
+    display: none; /* auf dem Handy nur ein Handy zeigen */
+  }
+
+  .hero-phone-front {
+    right: auto;
+    left: 50%;
+    width: 230px;
+    transform: translateX(-50%);
   }
 
   /* --- Handy: Startseite Banner 2 --- */
