@@ -26,6 +26,39 @@ a {
   padding: 0 1rem;
 }
 
+/* ===== DHBW-Hinweisleiste ===== */
+
+.project-bar {
+  background-color: #e2001a; /* DHBW-Rot */
+  color: #ffffff;
+  font-size: 0.8rem;
+  padding: 0.5rem 0;
+}
+
+.project-bar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.project-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.project-bar-logo {
+  display: block;
+  height: 22px;
+  width: auto;
+  filter: brightness(0) invert(1); 
+}
+
+.project-bar-note {
+  color: #ffd9dd;
+}
+
 /* ===== Header ===== */
 
 .header {
@@ -568,6 +601,13 @@ a {
    ========================================================== */
 
 @media (max-width: 700px) {
+
+  /* --- Handy: DHBW-Hinweisleiste --- */
+  .project-bar-inner {
+    flex-direction: column; /* Hinweis unter das Logo */
+    gap: 0.3rem;
+    text-align: center;
+  }
 
   /* --- Handy: Header --- */
   .header-inner {
