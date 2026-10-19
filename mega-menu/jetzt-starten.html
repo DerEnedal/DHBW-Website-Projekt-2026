@@ -38,12 +38,197 @@
     </div>
   </header>
 
-  <main class="main">
-    <div class="container">
+  <main class="main main-features">
 
-      <h1>Jetzt starten</h1>
+    <!-- ===== Banner 1: Download ===== -->
+    <section class="start-hero">
+      <div class="container start-hero-inner">
 
-    </div>
+        <div class="start-hero-text">
+          <p class="eyebrow">Jetzt starten</p>
+          <h1>Lade Centora.<br><em>Kostenlos.</em></h1>
+          <p class="lead">In zwei Minuten eingerichtet. Starte mit dem Free-Plan und wechsle, wann immer du mehr brauchst.</p>
+          <div class="store-buttons">
+            <a href="https://www.apple.com/de/app-store/" class="store-button">
+              <img src="../assets/images/jetzt-starten/stores/apple.svg" alt="">
+              <span><small>Laden im</small>App Store</span>
+            </a>
+            <a href="https://play.google.com/store" class="store-button">
+              <img src="../assets/images/jetzt-starten/stores/googleplay.svg" alt="">
+              <span><small>Jetzt bei</small>Google Play</span>
+            </a>
+          </div>
+          <p class="start-note">Für iOS 16 und Android 10 oder neuer · Keine Kreditkarte nötig</p>
+        </div>
+
+        <div class="feature-image start-hero-image">
+          <img src="../assets/images/jetzt-starten/banner-1/app-konten.png" alt="Centora App: Konten">
+          <div class="qr-card">
+            <img src="../assets/images/jetzt-starten/banner-1/qr-code.svg" alt="QR-Code zum Download (Beispiel)">
+            <span>Scannen &amp; laden</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== Banner 2: Pläne ===== -->
+    <!-- Umschalter Monatlich/Jährlich ohne JavaScript: Radio-Buttons + :checked -->
+    <section class="band plans">
+      <div class="container">
+
+        <input type="radio" name="billing" id="billing-monthly" class="billing-radio" checked>
+        <input type="radio" name="billing" id="billing-yearly" class="billing-radio">
+
+        <div class="plans-head">
+          <div>
+            <p class="eyebrow">Pläne</p>
+            <h2>Wähle deinen Plan.</h2>
+          </div>
+          <div class="billing-switch">
+            <label for="billing-monthly">Monatlich</label>
+            <label for="billing-yearly">Jährlich <em>–20 %</em></label>
+          </div>
+        </div>
+
+        <div class="plans-grid">
+
+          <div class="plan">
+            <p class="plan-name">Free</p>
+            <p class="plan-for">Für den ersten Überblick</p>
+            <p class="plan-price">0 €</p>
+            <p class="plan-per">für immer</p>
+            <ul class="plan-list">
+              <li>2 Konten verbinden</li>
+              <li>Fixkosten &amp; Abos</li>
+              <li>1 Sparziel</li>
+              <li>Zinsrechner</li>
+            </ul>
+            <a href="#download" class="btn btn-outline">Kostenlos starten</a>
+          </div>
+
+          <div class="plan plan-highlight">
+            <span class="plan-tag">Beliebt</span>
+            <p class="plan-name">Plus</p>
+            <p class="plan-for">Für alle, die sparen wollen</p>
+            <p class="plan-price">
+              <span class="price-monthly">4,99 €</span>
+              <span class="price-yearly">3,99 €</span>
+              <small>/ Monat</small>
+            </p>
+            <p class="plan-per">
+              <span class="price-monthly">monatlich kündbar</span>
+              <span class="price-yearly">47,88 € jährlich</span>
+            </p>
+            <ul class="plan-list">
+              <li class="plan-plus">Alles aus Free</li>
+              <li>Unbegrenzt Konten</li>
+              <li>Sparziele mit Aufrunden</li>
+              <li>Depot-Übersicht</li>
+              <li>Versicherungsvergleich</li>
+            </ul>
+            <a href="#download" class="btn">Plus wählen</a>
+          </div>
+
+          <div class="plan">
+            <p class="plan-name">Premium</p>
+            <p class="plan-for">Mit persönlicher Beratung</p>
+            <p class="plan-price">
+              <span class="price-monthly">9,99 €</span>
+              <span class="price-yearly">7,99 €</span>
+              <small>/ Monat</small>
+            </p>
+            <p class="plan-per">
+              <span class="price-monthly">monatlich kündbar</span>
+              <span class="price-yearly">95,88 € jährlich</span>
+            </p>
+            <ul class="plan-list">
+              <li class="plan-plus">Alles aus Plus</li>
+              <li>Beratung mit TauRes</li>
+              <li>Investitionsempfehlung</li>
+              <li>Export als PDF &amp; CSV</li>
+              <li>Priorisierter Support</li>
+            </ul>
+            <a href="#download" class="btn btn-outline">Premium wählen</a>
+          </div>
+
+        </div>
+
+        <p class="plans-note">Alle Preise inkl. MwSt. · Beispielpreise für das Studienprojekt</p>
+      </div>
+    </section>
+
+    <!-- ===== Banner 3: Vergleich ===== -->
+    <section class="compare">
+      <div class="container">
+        <h2>Alle Funktionen im Vergleich.</h2>
+
+        <div class="compare-scroll">
+          <table class="compare-table">
+            <thead>
+              <tr><th></th><th>Free</th><th class="col-highlight">Plus</th><th>Premium</th></tr>
+            </thead>
+            <tbody>
+              <tr class="compare-group"><td colspan="4">Überblick</td></tr>
+              <tr><td>Konten verbinden</td><td>2</td><td class="col-highlight">unbegrenzt</td><td>unbegrenzt</td></tr>
+              <tr><td>Fixkosten &amp; Abos</td><td class="yes">✓</td><td class="yes col-highlight">✓</td><td class="yes">✓</td></tr>
+              <tr><td>Depot-Übersicht</td><td class="no">–</td><td class="yes col-highlight">✓</td><td class="yes">✓</td></tr>
+
+              <tr class="compare-group"><td colspan="4">Sparen &amp; Planen</td></tr>
+              <tr><td>Sparziele</td><td>1</td><td class="col-highlight">unbegrenzt</td><td>unbegrenzt</td></tr>
+              <tr><td>Aufrunden</td><td class="no">–</td><td class="yes col-highlight">✓</td><td class="yes">✓</td></tr>
+              <tr><td>Zinsrechner</td><td class="yes">✓</td><td class="yes col-highlight">✓</td><td class="yes">✓</td></tr>
+              <tr><td>Investitionsempfehlung</td><td class="no">–</td><td class="no col-highlight">–</td><td class="yes">✓</td></tr>
+
+              <tr class="compare-group"><td colspan="4">Verträge &amp; Beratung</td></tr>
+              <tr><td>Versicherungsvergleich</td><td class="no">–</td><td class="yes col-highlight">✓</td><td class="yes">✓</td></tr>
+              <tr><td>Persönliche Beratung</td><td class="no">–</td><td class="no col-highlight">–</td><td>1 Termin / Monat</td></tr>
+              <tr><td>Export als PDF &amp; CSV</td><td class="no">–</td><td class="no col-highlight">–</td><td class="yes">✓</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Banner 4: Fragen zu den Plänen ===== -->
+    <section class="faq faq-grey">
+      <div class="container faq-inner">
+        <h2>Fragen zu<br>den Plänen.</h2>
+
+        <div class="faq-list">
+          <details open>
+            <summary>Kann ich jederzeit kündigen?</summary>
+            <p>Ja. Plus und Premium kannst du jederzeit zum Ende des Abrechnungszeitraums kündigen. Danach nutzt du Centora einfach im Free-Plan weiter.</p>
+          </details>
+          <details>
+            <summary>Was passiert mit meinen Daten beim Wechsel?</summary>
+            <p>Nichts geht verloren. Konten, Sparziele und Verträge bleiben erhalten – im Free-Plan siehst du nur weniger Funktionen.</p>
+          </details>
+          <details>
+            <summary>Wie bezahle ich?</summary>
+            <p>Ganz bequem über den App Store oder Google Play – mit der Zahlungsart, die du dort hinterlegt hast.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Banner 5: Abschluss ===== -->
+    <section class="cta-dark" id="download">
+      <div class="container">
+        <h2>Bereit? Dann los.</h2>
+        <div class="store-buttons store-buttons-light">
+            <a href="https://www.apple.com/de/app-store/" class="store-button">
+              <img src="../assets/images/jetzt-starten/stores/apple.svg" alt="">
+              <span><small>Laden im</small>App Store</span>
+            </a>
+            <a href="https://play.google.com/store" class="store-button">
+              <img src="../assets/images/jetzt-starten/stores/googleplay.svg" alt="">
+              <span><small>Jetzt bei</small>Google Play</span>
+            </a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">
