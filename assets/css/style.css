@@ -233,7 +233,8 @@ h2 {
 
 .header-inner {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 1.25rem;
   align-items: center;
 }
 
@@ -251,6 +252,7 @@ h2 {
 .nav {
   display: flex;
   gap: 2rem;
+  justify-self: center;
 }
 
 .nav a {
@@ -1098,23 +1100,6 @@ h2 {
   background-color: var(--color-surface);
 }
 
-.feature-dark {
-  background-color: var(--color-dark);
-  color: var(--color-white);
-}
-
-.feature-dark .lead {
-  color: var(--color-dark-muted);
-}
-
-.feature-dark .feature-facts {
-  border-top-color: var(--color-dark-border);
-}
-
-.feature-dark .feature-image::before {
-  background-color: var(--color-dark-accent);
-}
-
 /* ===== Funktionen: Banner 9 (Abschluss) ===== */
 
 .features-cta {
@@ -1936,7 +1921,6 @@ h2 {
 
   /* --- Handy: Header --- */
   .header-inner {
-    grid-template-columns: 1fr auto;
     row-gap: 1rem;
   }
 
@@ -2234,3 +2218,149 @@ h2 {
   }
 
 } /* Ende Handy */
+
+
+/* ==========================================================
+   ===== Dark Mode (folgt der Systemeinstellung) =====
+   ========================================================== */
+
+/* Der Selektor-Präfix ":root" erhöht die Spezifität, damit die
+   Dark-Regeln die normalen Regeln sicher überschreiben. */
+@media (prefers-color-scheme: dark) {
+
+  /* --- Farbpalette (Waldgrün) --- */
+  :root {
+    color-scheme: dark;
+
+    --color-bg: #0f1a16;
+    --color-surface: #131f1a;
+    --color-white: #172520;           /* Karten */
+    --color-placeholder: #2a3b34;
+    --color-accent-soft: #172520;
+    --color-primary: #099164ce;
+    --color-accent: #099164ce;
+    --color-accent-light: #1c7b5c;
+    --color-text: #f2f7f4;
+    --color-text-muted: #a9b8b0;
+    --color-text-soft: #a9b8b0;
+    --color-text-faint: #7f9088;
+    --color-border: #2a3b34;
+    --color-border-strong: #2a3b34;
+    --color-dhbw: #7f1d1d;
+    --color-dhbw-soft: #fecaca;
+    --color-dark: #0b1510;            /* dunkle Bänder */
+    --color-dark-border: #2a3b34;
+  }
+
+  /* Elemente, die auch im Dark Mode ihre hellen Original-Farben behalten */
+  :root .feature-dark,
+  :root .cta-dark,
+  :root .footer,
+  :root .store-button,
+  :root .plan-highlight {
+    --color-white: #ffffff;
+    --color-primary: #0f3d2e;
+  }
+
+  :root .flow-step-highlight {
+    --color-white: #0e1512;
+  }
+
+  /* Icon auf dem grünen Hintergrund sichtbar machen */
+  :root .flow-step-highlight svg {
+    color: var(--color-white);
+  }
+
+  :root .project-bar {
+    --color-white: #ffffff;
+    --color-dhbw-soft: #ffd9dd;
+  }
+
+  /* --- Grundlagen --- */
+  :root body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+
+  :root .header {
+    background-color: var(--color-bg);
+    border-bottom: none;
+  }
+
+  :root .logo img {
+    filter: invert(1) hue-rotate(150deg) brightness(1.1);
+    mix-blend-mode: screen;
+  }
+
+  :root .project-bar-logo,
+  :root .store-button img {
+    filter: brightness(0) invert(1);
+  }
+
+  /* --- Links und kleine Akzenttexte --- */
+  :root .nav a:hover,
+  :root .link-underline:hover,
+  :root .eyebrow,
+  :root .link-arrow::after,
+  :root small {
+    color: #34d399;
+  }
+
+  :root .mission mark {
+    background: linear-gradient(transparent 62%, rgba(16, 185, 129, 0.35) 62%);
+  }
+
+  /* --- Buttons --- */
+  :root .btn,
+  :root .btn:hover,
+  :root .newsletter-form button,
+  :root .newsletter-form button:hover,
+  :root .about-sticker {
+    background-color: #21934b;
+    color: #0b1f18;
+  }
+
+  :root .btn-outline {
+    border: none;
+  }
+
+  :root .store-button,
+  :root .store-buttons-light .store-button {
+    background-color: #172520;
+    color: #f2f7f4;
+    border: none;
+  }
+
+  :root .store-button small,
+  :root .store-button span:first-child {
+    color: #6ee7a8;
+  }
+
+  /* --- Flächen: normal < hell abgesetzt < sehr dunkel < Footer --- */
+  :root .feature,
+  :root .chapter-nav,
+  :root .feature-grey .feature-image::before {
+    background-color: #0f1a16;
+  }
+
+  :root .band,
+  :root .feature-grey,
+  :root .faq-grey,
+  :root .compare-table .col-highlight {
+    background-color: #172520;
+  }
+
+  :root .plan-highlight {
+    background-color: #2a3b34;
+    color: #f2f7f4;
+  }
+
+  :root .cta-dark,
+  :root .feature-dark {
+    background-color: #0b1510;
+  }
+
+  :root .footer {
+    background-color: #08100c;
+  }
+}
