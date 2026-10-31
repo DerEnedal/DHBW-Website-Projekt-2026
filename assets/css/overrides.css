@@ -1,0 +1,486 @@
+/* ==========================================================
+   ===== Handy =====
+   Alles in diesem Block gilt nur für Bildschirme bis 700px
+   Breite (Handys). Die Regeln überschreiben die Styles oben.
+   ========================================================== */
+
+@media (max-width: 700px) {
+
+  /* --- Handy: Gemeinsame Bausteine --- */
+  .band {
+    margin-top: 4rem;
+  }
+
+  .features-image img,
+  .newsletter-image img {
+    margin: 0 auto;
+  }
+
+  /* --- Handy: DHBW-Hinweisleiste --- */
+  .project-bar-inner {
+    flex-direction: column; /* Hinweis unter das Logo */
+    gap: 0.3rem;
+    text-align: center;
+  }
+
+  /* --- Handy: Header --- */
+  .header-inner {
+    row-gap: 1rem;
+  }
+
+  .nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+
+  /* --- Handy: Hauptinhalt --- */
+  .main {
+    padding: 2.5rem 0;
+  }
+
+  /* --- Handy: Startseite Banner 1 --- */
+  .hero-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-phones {
+    height: 460px;
+  }
+
+  .hero-phones::before {
+    width: 320px;
+    height: 320px;
+  }
+
+  .hero-phone-back,
+  .hero-badge {
+    display: none; /* auf dem Handy nur ein Handy zeigen */
+  }
+
+  .hero-phone-front {
+    right: auto;
+    left: 50%;
+    width: 230px;
+    transform: translateX(-50%);
+  }
+
+  /* --- Handy: Startseite Banner 2 --- */
+  .problems-band {
+    padding: 3rem 0;
+  }
+
+  .problems {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* --- Handy: Startseite Banner 3 --- */
+  .features {
+    padding-top: 4rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr; /* Bild unter die Tabs */
+    gap: 1rem;
+  }
+
+  .features-text {
+    padding-bottom: 0;
+  }
+
+  /* --- Handy: Startseite Banner 4 --- */
+  .newsletter-band {
+    padding-top: 3rem;
+  }
+
+  .newsletter {
+    grid-template-columns: 1fr; /* Bild unter das Formular */
+    gap: 1rem;
+  }
+
+  .newsletter-text {
+    padding-bottom: 1rem;
+  }
+
+  /* --- Handy: Über uns --- */
+  .about-hero {
+    padding-top: 3rem;
+  }
+
+  .about-photo {
+    aspect-ratio: 4 / 3;
+  }
+
+  .about-sticker {
+    right: 16px;
+    width: 110px;
+    height: 110px;
+  }
+
+  .about-sticker span {
+    font-size: 0.95rem;
+  }
+
+  .about-story,
+  .partner-inner {
+    grid-template-columns: 1fr; /* untereinander */
+    gap: 2rem;
+  }
+
+  .about-facts {
+    flex-direction: row;
+    gap: 2rem;
+    border-left: none;
+    border-top: 1px solid var(--color-border);
+    padding-left: 0;
+    padding-top: 1.25rem;
+  }
+
+  .mission-values,
+  .timeline-list {
+    grid-template-columns: 1fr; /* Werte und Zeitleiste untereinander */
+  }
+
+  .mission-values li,
+  .mission-values li + li {
+    padding: 1.2rem 0;
+    border-left: none;
+    border-bottom: 1px solid var(--color-border-strong);
+  }
+
+  .timeline-list::before {
+    display: none;
+  }
+
+  .timeline-item {
+    padding: 0 0 2rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr 1fr; /* 2 × 2 */
+  }
+
+  .team-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mission,
+  .team,
+  .timeline,
+  .partner {
+    padding: 4rem 0;
+  }
+
+  .partner-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* --- Handy: Funktionen Banner 1 (Hero) --- */
+  .features-hero {
+    padding-top: 3rem;
+  }
+
+  .phone-fan {
+    height: 360px;
+    margin-top: 2.5rem;
+  }
+
+  .phone-fan-left,
+  .phone-fan-right {
+    display: none; /* auf dem Handy nur ein Handy zeigen */
+  }
+
+  .phone-fan-center {
+    width: 240px !important;
+  }
+
+  .chapter-nav {
+    gap: 0.4rem 1.2rem;
+  }
+
+  /* --- Handy: Funktionen Banner 2–8 --- */
+  .feature {
+    padding-top: 4rem;
+  }
+
+  .feature-inner {
+    grid-template-columns: 1fr; /* Bild unter den Text */
+    gap: 2.5rem;
+  }
+
+  .feature-flip .feature-text {
+    order: 0;
+  }
+
+  .feature-image {
+    height: 420px;
+  }
+
+  .feature-image::before {
+    width: 300px;
+    height: 300px;
+  }
+
+  .feature-image img {
+    width: 230px;
+  }
+
+  /* --- Handy: Sicherheit --- */
+  .security-hero-inner,
+  .promises,
+  .faq-inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .security-hero-text {
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  .security-hero .lead {
+    margin: 1.4rem auto 2rem;
+  }
+
+  .security-hero-image {
+    height: 440px;
+  }
+
+  .floating-card {
+    display: none;
+  }
+
+  .promises-band,
+  .data-flow,
+  .faq,
+  .cta-dark {
+    padding: 4rem 0;
+  }
+
+  .flow-steps {
+    grid-template-columns: 1fr 1fr; /* 2 × 2 statt 4 nebeneinander */
+    gap: 1rem;
+  }
+
+  .flow-step::after {
+    display: none; /* Pfeile auf dem Handy ausblenden */
+  }
+
+  /* --- Handy: Jetzt starten --- */
+  .start-hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .start-hero-text {
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  .start-hero .lead {
+    margin: 1.4rem auto 2rem;
+  }
+
+  .store-buttons {
+    justify-content: center;
+  }
+
+  .start-hero-image {
+    height: 440px;
+  }
+
+  .qr-card {
+    display: none; /* QR-Code ergibt auf dem Handy keinen Sinn */
+  }
+
+  .plans,
+  .compare {
+    padding: 4rem 0;
+  }
+
+  .plans-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .plans-grid {
+    grid-template-columns: 1fr; /* Pläne untereinander */
+  }
+
+  /* --- Handy: Footer --- */
+  .footer-inner {
+    flex-direction: column; /* Logo, Links und Copyright untereinander */
+    text-align: center;
+  }
+
+} /* Ende Handy */
+
+
+/* ==========================================================
+   ===== Dark Mode (folgt der Systemeinstellung) =====
+   ========================================================== */
+
+/* Der Selektor-Präfix ":root" erhöht die Spezifität, damit die
+   Dark-Regeln die normalen Regeln sicher überschreiben. */
+@media (prefers-color-scheme: dark) {
+
+  /* --- Farbpalette (Waldgrün) --- */
+  :root {
+    color-scheme: dark;
+
+    --color-bg: #0f1a16;
+    --color-surface: #131f1a;
+    --color-white: #172520;           /* Karten */
+    --color-placeholder: #2a3b34;
+    --color-accent-soft: #172520;
+    --color-primary: #4ac485;
+    --color-accent: #12b982ce;
+    --color-accent-light: #1c7b5c;
+    --color-text: #f2f7f4;
+    --color-text-muted: #a9b8b0;
+    --color-text-soft: #a9b8b0;
+    --color-text-faint: #7f9088;
+    --color-border: #2a3b34;
+    --color-border-strong: #2a3b34;
+    --color-dhbw: #7f1d1d;
+    --color-dhbw-soft: #fecaca;
+    --color-dark: #0b1510;            /* dunkle Bänder */
+    --color-dark-border: #2a3b34;
+  }
+
+  /* Elemente, die auch im Dark Mode ihre hellen Original-Farben behalten */
+  :root .feature-dark,
+  :root .cta-dark,
+  :root .footer,
+  :root .store-button,
+  :root .plan-highlight {
+    --color-white: #ffffff;
+    --color-primary: #0f3d2e;
+  }
+
+  :root .flow-step-highlight {
+    --color-white: #0e1512;
+  }
+
+  /* Icon auf dem grünen Hintergrund sichtbar machen */
+  :root .flow-step-highlight svg {
+    color: var(--color-white);
+  }
+  :root .flow-step-highlight .flow-step-caption {
+  color: #0b0b0b;
+  }
+
+  :root .project-bar {
+    --color-white: #ffffff;
+    --color-dhbw-soft: #ffd9dd;
+  }
+
+  /* --- Grundlagen --- */
+  :root body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+
+  :root .header {
+    background-color: var(--color-bg);
+    border-bottom: none;
+  }
+
+  :root .logo img {
+    filter: invert(1) hue-rotate(150deg) brightness(1.1);
+    mix-blend-mode: screen;
+  }
+
+  :root .project-bar-logo,
+  :root .store-button img {
+    filter: brightness(0) invert(1);
+  }
+
+  /* --- Links und kleine Akzenttexte --- */
+  :root .nav a:hover,
+  :root .link-underline:hover,
+  :root .eyebrow,
+  :root .link-arrow::after,
+  :root small {
+    color: #4d9c7f;
+  }
+  :root .about-sticker .about-sticker-date {
+  color: #000000;
+  }
+
+  :root .mission mark {
+    background: linear-gradient(transparent 62%, rgba(16, 185, 129, 0.35) 62%);
+  }
+
+  /* --- Buttons --- */
+  :root .btn,
+  :root .btn:hover,
+  :root .newsletter-form button,
+  :root .newsletter-form button:hover,
+  :root .about-sticker {
+    background-color: #267d5d;
+    color: #f4f4f4;
+  }
+
+  :root .btn-outline {
+    border: none;
+  }
+
+  :root .store-button,
+  :root .store-buttons-light .store-button {
+    background-color: #172520;
+    color: #f2f7f4;
+    border: none;
+  }
+ :root .plan-tag {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  background-color: var(--color-accent-light);
+  color: var(--color-white);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+  :root .store-button small,
+  :root .store-button span:first-child {
+    color: #6ee7a8;
+  }
+
+  /* --- Flächen: normal < hell abgesetzt < sehr dunkel < Footer --- */
+  :root .feature,
+  :root .chapter-nav,
+  :root .feature-grey .feature-image::before {
+    background-color: #0f1a16;
+  }
+
+  :root .band,
+  :root .feature-grey,
+  :root .faq-grey,
+  :root .compare-table .col-highlight {
+    background-color: #172520;
+  }
+
+  :root .plan-highlight {
+    background-color: #2a3b34;
+    color: #f2f7f4;
+  }
+
+  :root .cta-dark,
+  :root .feature-dark {
+    background-color: #0b1510;
+  }
+
+  :root .footer {
+    background-color: #08100c;
+  }
+}

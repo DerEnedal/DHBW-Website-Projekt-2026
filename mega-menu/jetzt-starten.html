@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../assets/css/style.css?v=8">
 </head>
 <body>
+  <a href="#main" class="skip-link">Zum Inhalt springen</a>
 
   <!-- ===== DHBW-Hinweisleiste ===== -->
   <div class="project-bar">
@@ -39,7 +40,7 @@
     </div>
   </header>
 
-  <main class="main main-features">
+  <main id="main" tabindex="-1" class="main main-features">
 
     <!-- ===== Banner 1: Download ===== -->
     <section class="start-hero">
@@ -95,7 +96,7 @@
         <div class="plans-grid">
 
           <div class="plan">
-            <p class="plan-name">Free</p>
+            <h3 class="plan-name">Free</h3>
             <p class="plan-for">Für den ersten Überblick</p>
             <p class="plan-price">0 €</p>
             <p class="plan-per">für immer</p>
@@ -110,7 +111,7 @@
 
           <div class="plan plan-highlight">
             <span class="plan-tag">Beliebt</span>
-            <p class="plan-name">Plus</p>
+            <h3 class="plan-name">Plus</h3>
             <p class="plan-for">Für alle, die sparen wollen</p>
             <p class="plan-price">
               <span class="price-monthly">4,99 €</span>
@@ -132,7 +133,7 @@
           </div>
 
           <div class="plan">
-            <p class="plan-name">Premium</p>
+            <h3 class="plan-name">Premium</h3>
             <p class="plan-for">Mit persönlicher Beratung</p>
             <p class="plan-price">
               <span class="price-monthly">9,99 €</span>
@@ -167,24 +168,96 @@
         <div class="compare-scroll" tabindex="0" role="region" aria-label="Funktionsvergleich der Pläne">
           <table class="compare-table">
             <thead>
-              <tr><th></th><th>Free</th><th class="col-highlight">Plus</th><th>Premium</th></tr>
+              <tr>
+                <th scope="col"><span class="sr-only">Funktion</span></th>
+                <th scope="col">Free</th>
+                <th scope="col" class="col-highlight">Plus</th>
+                <th scope="col">Premium</th>
+              </tr>
             </thead>
             <tbody>
-              <tr class="compare-group"><td colspan="4">Überblick</td></tr>
-              <tr><td>Konten verbinden</td><td>2</td><td class="col-highlight">unbegrenzt</td><td>unbegrenzt</td></tr>
-              <tr><td>Fixkosten &amp; Abos</td><td class="yes">✓</td><td class="yes col-highlight">✓</td><td class="yes">✓</td></tr>
-              <tr><td>Depot-Übersicht</td><td class="no">–</td><td class="yes col-highlight">✓</td><td class="yes">✓</td></tr>
-
-              <tr class="compare-group"><td colspan="4">Sparen &amp; Planen</td></tr>
-              <tr><td>Sparziele</td><td>1</td><td class="col-highlight">unbegrenzt</td><td>unbegrenzt</td></tr>
-              <tr><td>Aufrunden</td><td class="no">–</td><td class="yes col-highlight">✓</td><td class="yes">✓</td></tr>
-              <tr><td>Zinsrechner</td><td class="yes">✓</td><td class="yes col-highlight">✓</td><td class="yes">✓</td></tr>
-              <tr><td>Investitionsempfehlung</td><td class="no">–</td><td class="no col-highlight">–</td><td class="yes">✓</td></tr>
-
-              <tr class="compare-group"><td colspan="4">Verträge &amp; Beratung</td></tr>
-              <tr><td>Versicherungsvergleich</td><td class="no">–</td><td class="yes col-highlight">✓</td><td class="yes">✓</td></tr>
-              <tr><td>Persönliche Beratung</td><td class="no">–</td><td class="no col-highlight">–</td><td>1 Termin / Monat</td></tr>
-              <tr><td>Export als PDF &amp; CSV</td><td class="no">–</td><td class="no col-highlight">–</td><td class="yes">✓</td></tr>
+              <tr class="compare-group">
+                <th scope="rowgroup">Überblick</th>
+                <td></td>
+                <td class="col-highlight"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Konten verbinden</th>
+                <td>2</td>
+                <td class="col-highlight">unbegrenzt</td>
+                <td>unbegrenzt</td>
+              </tr>
+              <tr>
+                <th scope="row">Fixkosten &amp; Abos</th>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="sr-only">Enthalten</span></td>
+                <td class="yes col-highlight"><span aria-hidden="true">✓</span><span class="sr-only">Enthalten</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="sr-only">Enthalten</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Depot-Übersicht</th>
+                <td class="no"><span aria-hidden="true">–</span><span class="sr-only">Nicht enthalten</span></td>
+                <td class="yes col-highlight"><span aria-hidden="true">✓</span><span class="sr-only">Enthalten</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="sr-only">Enthalten</span></td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr class="compare-group">
+                <th scope="rowgroup">Sparen &amp; Planen</th>
+                <td></td>
+                <td class="col-highlight"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Sparziele</th>
+                <td>1</td>
+                <td class="col-highlight">unbegrenzt</td>
+                <td>unbegrenzt</td>
+              </tr>
+              <tr>
+                <th scope="row">Aufrunden</th>
+                <td class="no"><span aria-hidden="true">–</span><span class="sr-only">Nicht enthalten</span></td>
+                <td class="yes col-highlight"><span aria-hidden="true">✓</span><span class="sr-only">Enthalten</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="sr-only">Enthalten</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Zinsrechner</th>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="sr-only">Enthalten</span></td>
+                <td class="yes col-highlight"><span aria-hidden="true">✓</span><span class="sr-only">Enthalten</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="sr-only">Enthalten</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Investitionsempfehlung</th>
+                <td class="no"><span aria-hidden="true">–</span><span class="sr-only">Nicht enthalten</span></td>
+                <td class="no col-highlight"><span aria-hidden="true">–</span><span class="sr-only">Nicht enthalten</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="sr-only">Enthalten</span></td>
+              </tr>
+            </tbody>
+            <tbody>
+              <tr class="compare-group">
+                <th scope="rowgroup">Verträge &amp; Beratung</th>
+                <td></td>
+                <td class="col-highlight"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">Versicherungsvergleich</th>
+                <td class="no"><span aria-hidden="true">–</span><span class="sr-only">Nicht enthalten</span></td>
+                <td class="yes col-highlight"><span aria-hidden="true">✓</span><span class="sr-only">Enthalten</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="sr-only">Enthalten</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Persönliche Beratung</th>
+                <td class="no"><span aria-hidden="true">–</span><span class="sr-only">Nicht enthalten</span></td>
+                <td class="no col-highlight"><span aria-hidden="true">–</span><span class="sr-only">Nicht enthalten</span></td>
+                <td>1 Termin / Monat</td>
+              </tr>
+              <tr>
+                <th scope="row">Export als PDF &amp; CSV</th>
+                <td class="no"><span aria-hidden="true">–</span><span class="sr-only">Nicht enthalten</span></td>
+                <td class="no col-highlight"><span aria-hidden="true">–</span><span class="sr-only">Nicht enthalten</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="sr-only">Enthalten</span></td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -218,14 +291,14 @@
       <div class="container">
         <h2>Bereit? Dann los.</h2>
         <div class="store-buttons store-buttons-light">
-            <a href="https://www.apple.com/de/app-store/" class="store-button">
-              <img src="../assets/images/jetzt-starten/stores/apple.svg" alt="Apple App Store Button">
-              <span><small>Laden im</small>App Store</span>
-            </a>
-            <a href="https://play.google.com/store" class="store-button">
-              <img src="../assets/images/jetzt-starten/stores/googleplay.svg" alt="Google Play Store Button">
-              <span><small>Jetzt bei</small>Google Play</span>
-            </a>
+          <a href="https://www.apple.com/de/app-store/" class="store-button">
+            <img src="../assets/images/jetzt-starten/stores/apple.svg" alt="Apple App Store Button">
+            <span><small>Laden im</small>App Store</span>
+          </a>
+          <a href="https://play.google.com/store" class="store-button">
+            <img src="../assets/images/jetzt-starten/stores/googleplay.svg" alt="Google Play Store Button">
+            <span><small>Jetzt bei</small>Google Play</span>
+          </a>
         </div>
       </div>
     </section>
