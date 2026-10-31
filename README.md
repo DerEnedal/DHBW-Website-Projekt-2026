@@ -14,13 +14,11 @@ Statische, responsive Marketing-Website für **Centora**, eine fiktive Finanz-Ap
 
 | Frage | Antwort |
 |---|---|
-| **Wer?** | Vier Studierende der DHBW Heidenheim · Kontakt: [daniel@rosenberger.click](mailto:daniel@rosenberger.click) |
+| **Wer?** | Vier Studierende der DHBW Heidenheim **E-Mail:** <br> [rosenbergerd.wwi26@student.dhbw-heidenheim.de](mailto:rosenbergerd.wwi26@student.dhbw-heidenheim.de)<br>[zenkerd.wwi26@student.dhbw-heidenheim.de](mailto:zenkerd.wwi26@student.dhbw-heidenheim.de)<br>[caliskanb.wwi26@student.dhbw-heidenheim.de](mailto:caliskanb.wwi26@student.dhbw-heidenheim.de)<br>[gökmenm.wwi26@student.dhbw-heidenheim.de](mailto:gökmenm.wwi26@student.dhbw-heidenheim.de) |
 | **Was?** | 8 HTML-Seiten, 1 Stylesheet, Bilder (PNG, JPG, SVG). Keine Skripte, kein Build. |
-| **Wann?** | Letzte Aktualisierung: 31.10.2026 |
+| **Wann?** | Letzte Aktualisierung: fortlaufend|
 | **Wo?** | [github.com/DerEnedal/DHBW-Website-Projekt-2026](https://github.com/DerEnedal/DHBW-Website-Projekt-2026) (Branch `main`) |
 | **Warum?** | Studienprojekt: Entwurf und Umsetzung einer vollständigen Produktwebsite, von der Gestaltung bis zum fertigen Code |
-
-Ordnerstruktur und Dateibenennung stehen zusätzlich in **[`README_Ordnerstruktur.txt`](README_Ordnerstruktur.txt)** auf oberster Ebene.
 
 ## Inhaltsverzeichnis
 
@@ -45,7 +43,6 @@ Ordnerstruktur und Dateibenennung stehen zusätzlich in **[`README_Ordnerstruktu
 |---|---|
 | **Einfach** | Kurze Headlines, wenig Fachsprache, ein Gedanke pro Banner |
 | **Transparent** | Preise, Funktionen und Datenverarbeitung offen dargestellt |
-| **Sicher** | Nur Lesezugriff, TLS-Verschlüsselung, Server in Frankfurt (EU) |
 
 ## 2. Features und Seiten
 
@@ -89,7 +86,6 @@ Jede Seite besteht aus **Bannern**. Ein Banner ist ein eigener `<section>`-Block
 | Versionskontrolle | Git, GitHub |
 | Hosting | beliebiges statisches Hosting, siehe [Deployment](#9-deployment) |
 
-**Browser:** aktuelle Versionen von Chrome, Edge, Safari und Firefox (wegen `:has()` Firefox ab Version 121).
 
 ## 4. Voraussetzungen
 
@@ -97,9 +93,8 @@ Zum **Ansehen** genügt ein aktueller Browser.
 
 Zum **Bearbeiten** werden benötigt:
 
-- Texteditor oder IDE (z. B. VS Code)
+- Texteditor (z. B. VS Code)
 - Git
-- Optional für einen lokalen Webserver: Python 3 **oder** Node.js (nur für `npx serve`)
 
 Das Projekt selbst braucht weder Node.js noch npm.
 
@@ -277,10 +272,6 @@ Umgesetzt:
 - Radio-Bedienelemente bleiben per Tastatur erreichbar (`opacity: 0` statt `display: none`)
 - Native Elemente (`details`, `summary`, `label`) statt eigener Widgets
 
-Verbesserungspotenzial:
-
-- **Kontrast im Light Mode:** `--color-text-soft` (`#8a8a8a`, ca. 3,5 : 1), `--color-text-faint` (`#b0b0b0`, ca. 2,2 : 1) und der Akzent `#3a9d6b` (ca. 3,4 : 1) liegen unter den 4,5 : 1 von WCAG AA für normalen Text
-- **Fokusstile** gibt es nur für Tabs und Abrechnungs-Umschalter, nicht für Buttons und Links
 
 ## 8. Konfiguration
 
@@ -315,7 +306,7 @@ DHBW Heidenheim · Jahrgang 2026
 
 | Kanal | Adresse |
 |---|---|
-| **E-Mail (Projekt, Fragen, Support)** | [daniel@rosenberger.click](mailto:daniel@rosenberger.click) |
+| **E-Mail (Projekt, Fragen, Support)** |<br> [rosenbergerd.wwi26@student.dhbw-heidenheim.de](mailto:rosenbergerd.wwi26@student.dhbw-heidenheim.de)<br>[zenkerd.wwi26@student.dhbw-heidenheim.de](mailto:zenkerd.wwi26@student.dhbw-heidenheim.de)<br>[caliskanb.wwi26@student.dhbw-heidenheim.de](mailto:caliskanb.wwi26@student.dhbw-heidenheim.de)<br>[gökmenm.wwi26@student.dhbw-heidenheim.de](mailto:gökmenm.wwi26@student.dhbw-heidenheim.de) |
 | **Fehler und Wünsche** | [GitHub Issues](https://github.com/DerEnedal/DHBW-Website-Projekt-2026/issues) |
 | **Repository** | [github.com/DerEnedal/DHBW-Website-Projekt-2026](https://github.com/DerEnedal/DHBW-Website-Projekt-2026) |
 | **Institution** | Duale Hochschule Baden-Württemberg (DHBW) Heidenheim |
