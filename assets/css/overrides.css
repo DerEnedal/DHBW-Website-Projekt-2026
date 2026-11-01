@@ -28,6 +28,11 @@
     row-gap: 1rem;
   }
 
+  .header-inner > .btn {
+    padding: 0.55rem 0.6rem;
+    font-size: 0.75rem;
+  }
+
   .nav {
     grid-column: 1 / -1;
     grid-row: 2;
@@ -46,12 +51,17 @@
     text-align: center;
   }
 
+  .hero-copy {
+    transform: none;
+  }
+
   .hero-actions {
     justify-content: center;
   }
 
   .hero-phones {
     height: 460px;
+    transform: none;
   }
 
   .hero-phones::before {
@@ -235,6 +245,10 @@
   }
 
   /* --- Handy: Sicherheit --- */
+  .security-hero {
+    padding-top: 4rem;
+  }
+
   .security-hero-inner,
   .promises,
   .faq-inner {
@@ -276,6 +290,10 @@
   }
 
   /* --- Handy: Jetzt starten --- */
+  .start-hero {
+    padding-top: 4.5rem;
+  }
+
   .start-hero-inner {
     grid-template-columns: 1fr;
   }

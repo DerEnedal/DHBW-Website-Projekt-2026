@@ -22,6 +22,10 @@
   margin: 1.25rem 0 2rem;
 }
 
+.hero-copy {
+  transform: translateY(-100px);
+}
+
 .hero-actions {
   display: flex;
   align-items: center;
@@ -31,7 +35,8 @@
 /* Zwei Handys: Konten vorne, Sparziele schräg dahinter */
 .hero-phones {
   position: relative;
-  height: 560px;
+  height: 510px;
+  transform: translateY(-50px);
 }
 
 /* Grüner Kreis hinter den Handys */
@@ -868,7 +873,7 @@
 /* ===== Sicherheit: Banner 1 (Hero) ===== */
 
 .security-hero {
-  padding-top: 4rem;
+  padding-top: 0rem;
   overflow: hidden; /* Handy unten abschneiden */
 }
 
@@ -1154,7 +1159,7 @@
 /* ===== Jetzt starten: Banner 1 (Download) ===== */
 
 .start-hero {
-  padding-top: 4.5rem;
+  padding-top: 1.375rem;
   overflow: hidden; /* Handy unten abschneiden */
 }
 
