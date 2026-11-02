@@ -60,20 +60,18 @@
   }
 
   .hero .hero-actions {
+    flex-direction: column;
     gap: 0.5rem;
   }
 
   .hero .hero-actions .btn-lg {
     padding-right: 0.8rem;
     padding-left: 0.8rem;
+    white-space: nowrap;
   }
 
   .hero .hero-actions .link-underline {
     font-size: 0.85rem;
-  }
-
-  .hero-cta-second-line {
-    display: block;
   }
 
   .hero-review-list {
@@ -83,7 +81,11 @@
   .hero-reviews {
     position: static;
     margin-top: 2rem;
-    text-align: left;
+    text-align: center;
+  }
+
+  .hero-review-rating {
+    justify-content: center;
   }
 
   .hero-phones {
