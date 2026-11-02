@@ -178,13 +178,6 @@
   font-size: 0.8rem;
 }
 
-.hero-review-note {
-  margin: 0.65rem 0 0;
-  color: var(--color-text-soft);
-  font-size: 0.75rem;
-  line-height: 1.4;
-}
-
 /* ===== Startseite: Banner 2 ===== */
 
 .problems-band {
@@ -303,6 +296,11 @@
   border-bottom: 1px solid var(--color-border);
 }
 
+.feature-tab h3 {
+  margin: 0;
+  font-size: inherit;
+}
+
 .feature-tab label {
   font-family: var(--font-serif);
   font-size: 1.35rem;
@@ -366,7 +364,7 @@
 
 /* ===== Startseite: Banner 5 ===== */
 
-/* Kein Abstand zwischen Banner 5 und Footer */
+/* Auf der Startseite endet der Inhalt direkt am Footer. */
 .main:has(.home-newsletter-band:last-child) {
   padding-bottom: 0;
 }
@@ -1766,8 +1764,9 @@
   padding: 0.9rem 0.75rem;
   text-align: left;
   font-weight: 600;
-border-bottom: 2px solid var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
 }
+
 .compare-table tbody th {
   padding: 0.9rem 0.75rem;
   text-align: left;

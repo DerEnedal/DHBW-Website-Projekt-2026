@@ -59,6 +59,23 @@
     justify-content: center;
   }
 
+  .hero .hero-actions {
+    gap: 0.5rem;
+  }
+
+  .hero .hero-actions .btn-lg {
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+  }
+
+  .hero .hero-actions .link-underline {
+    font-size: 0.85rem;
+  }
+
+  .hero-cta-second-line {
+    display: block;
+  }
+
   .hero-review-list {
     grid-template-columns: 1fr;
   }
@@ -425,11 +442,9 @@
     --color-dhbw: #7f1d1d;
     --color-dhbw-soft: #fecaca;
     --color-dark: #0b1510;            /* dunkle Bänder */
-    --color-dark-border: #2a3b34;
   }
 
   /* Elemente, die auch im Dark Mode ihre hellen Original-Farben behalten */
-  :root .feature-dark,
   :root .cta-dark,
   :root .footer,
   :root .store-button,
@@ -446,8 +461,9 @@
   :root .flow-step-highlight svg {
     color: var(--color-white);
   }
+
   :root .flow-step-highlight .flow-step-caption {
-  color: #0b0b0b;
+    color: #0b0b0b;
   }
 
   :root .project-bar {
@@ -484,8 +500,9 @@
   :root small {
     color: #4d9c7f;
   }
+
   :root .about-sticker .about-sticker-date {
-  color: #000000;
+    color: #000000;
   }
 
   :root .mission mark {
@@ -512,17 +529,11 @@
     color: #f2f7f4;
     border: none;
   }
- :root .plan-tag {
-  position: absolute;
-  top: 1.6rem;
-  right: 1.6rem;
-  padding: 0.25rem 0.65rem;
-  border-radius: 999px;
-  background-color: var(--color-accent-light);
-  color: var(--color-white);
-  font-size: 0.75rem;
-  font-weight: 700;
-}
+  :root .plan-tag {
+    background-color: var(--color-accent-light);
+    color: var(--color-white);
+  }
+
   :root .hero-review-stars {
     color: #caa21f;
     font-size: 1rem;
@@ -568,8 +579,7 @@
     color: #f2f7f4;
   }
 
-  :root .cta-dark,
-  :root .feature-dark {
+  :root .cta-dark {
     background-color: #0b1510;
   }
 

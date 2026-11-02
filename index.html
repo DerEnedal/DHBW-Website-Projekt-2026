@@ -41,11 +41,10 @@
   </header>
 
   <main id="main" tabindex="-1" class="main">
-    <article>
     <div class="container">
 
       <!-- ===== Banner 1 ===== -->
-      <section class="hero">
+      <div class="hero">
         <div class="hero-inner">
 
           <div class="hero-copy">
@@ -53,7 +52,7 @@
             <p class="lead">Konten, Ausgaben, Verträge und Sparziele an einem Ort. So planst du leichter und entscheidest bewusster.</p>
 
             <div class="hero-actions">
-              <a href="mega-menu/jetzt-starten.html" class="btn btn-lg">Jetzt kostenlos starten →</a>
+              <a href="mega-menu/jetzt-starten.html" class="btn btn-lg"><span>Jetzt kostenlos</span> <span class="hero-cta-second-line">starten →</span></a>
               <a href="mega-menu/funktionen.html" class="link-underline">Funktionen ansehen</a>
             </div>
 
@@ -61,10 +60,11 @@
               <h2 tabindex="0" id="hero-reviews-title">Herausragende App-Bewertungen</h2>
               <div class="hero-review-list">
                 <article class="hero-review">
-                  <div class="hero-review-store" aria-label="Beispiel für den App Store">
+                  <h3 class="sr-only">Bewertung von Ricardo K.</h3>
+                  <a class="hero-review-store" href="https://www.apple.com/de/app-store/" aria-label="Zum Apple App Store">
                     <img src="assets/images/jetzt-starten/stores/apple.svg" alt="">
                     <span><small class="hero-review-store-label">Laden im</small>App Store</span>
-                  </div>
+                  </a>
                   <p class="hero-review-rating">
                     <span class="hero-review-stars" role="img" aria-label="5 von 5 Sternen">★★★★★</span>
                     <strong>4,8</strong> im App Store
@@ -74,10 +74,11 @@
                 </article>
 
                 <article class="hero-review">
-                  <div class="hero-review-store" aria-label="Beispiel für Google Play">
+                  <h3 class="sr-only">Bewertung von Tom N.</h3>
+                  <a class="hero-review-store" href="https://play.google.com/store" aria-label="Zu Google Play">
                     <img src="assets/images/jetzt-starten/stores/googleplay.svg" alt="">
                     <span><small class="hero-review-store-label">Jetzt bei</small>Google Play</span>
-                  </div>
+                  </a>
                   <p class="hero-review-rating">
                     <span class="hero-review-stars" role="img" aria-label="5 von 5 Sternen">★★★★★</span>
                     <strong>4,7</strong> im Play Store
@@ -103,7 +104,7 @@
           </div>
 
         </div>
-      </section>
+      </div>
 
     </div>
 
@@ -173,37 +174,37 @@
           <div class="features-text">
             <h2 tabindex="0">Was Centora<br>für dich tut.</h2>
 
-            <div class="feature-tab tab-1">
-              <label for="feature-1">Versicherungsvergleich</label>
+            <article class="feature-tab tab-1">
+              <h3><label for="feature-1">Versicherungsvergleich</label></h3>
               <div class="feature-desc">
                 <p>Centora prüft deine Verträge und meldet sich, wenn es einen günstigeren Tarif gibt.</p>
                 <a href="mega-menu/funktionen.html" class="link-underline">Mehr erfahren<span class="sr-only"> über Versicherungsvergleich</span></a>
               </div>
-            </div>
+            </article>
 
-            <div class="feature-tab tab-2">
-              <label for="feature-2">Zinsrechner mit Empfehlung</label>
+            <article class="feature-tab tab-2">
+              <h3><label for="feature-2">Zinsrechner mit Empfehlung</label></h3>
               <div class="feature-desc">
                 <p>Sieh, wie dein Geld mit Zinseszins wächst – und welche Anlage zu deinem Profil passt.</p>
                 <a href="mega-menu/funktionen.html" class="link-underline">Mehr erfahren<span class="sr-only"> über Zinsrechner mit Empfehlung</span></a>
               </div>
-            </div>
+            </article>
 
-            <div class="feature-tab tab-3">
-              <label for="feature-3">Fixkosten und Abos</label>
+            <article class="feature-tab tab-3">
+              <h3><label for="feature-3">Fixkosten und Abos</label></h3>
               <div class="feature-desc">
                 <p>Centora findet alle wiederkehrenden Zahlungen – auch die, die du vergessen hast.</p>
                 <a href="mega-menu/funktionen.html" class="link-underline">Mehr erfahren<span class="sr-only"> über Fixkosten und Abos</span></a>
               </div>
-            </div>
+            </article>
 
-            <div class="feature-tab tab-4">
-              <label for="feature-4">Alle Konten auf einen Blick</label>
+            <article class="feature-tab tab-4">
+              <h3><label for="feature-4">Alle Konten auf einen Blick</label></h3>
               <div class="feature-desc">
                 <p>Girokonto, Tagesgeld und PayPal – verbunden in einem Dashboard.</p>
                 <a href="mega-menu/funktionen.html" class="link-underline">Mehr erfahren<span class="sr-only"> über Alle Konten auf einen Blick</span></a>
               </div>
-            </div>
+            </article>
           </div>
 
           <div class="features-image">
@@ -234,32 +235,38 @@
         </ul>
 
         <div class="reviews-grid">
-          <article class="review-card" tabindex="0">
+          <article class="review-card">
+            <h3 class="sr-only">Bewertung von Malte S.</h3>
             <span class="review-quote-mark" aria-hidden="true">“</span>
             <blockquote>Konten, Ausgaben und Verträge an einem Ort. Ich habe endlich den Überblick. Danke!</blockquote>
             <cite><span class="review-avatar" aria-hidden="true"></span>Malte S.</cite>
           </article>
-          <article class="review-card" tabindex="0">
+          <article class="review-card">
+            <h3 class="sr-only">Bewertung von Roland B.</h3>
             <span class="review-quote-mark" aria-hidden="true">“</span>
             <blockquote>Ich sehe sofort, wofür ich mein Geld ausgebe, und kann besser planen.</blockquote>
             <cite><span class="review-avatar" aria-hidden="true"></span>Roland B.</cite>
           </article>
-          <article class="review-card" tabindex="0">
+          <article class="review-card">
+            <h3 class="sr-only">Bewertung von Maya J.</h3>
             <span class="review-quote-mark" aria-hidden="true">“</span>
             <blockquote>Meine Sparziele motivieren mich dranzubleiben. Jeder Fortschritt ist sichtbar.</blockquote>
             <cite><span class="review-avatar" aria-hidden="true"></span>Maya J.</cite>
           </article>
-          <article class="review-card" tabindex="0">
+          <article class="review-card">
+            <h3 class="sr-only">Bewertung von Leo G.</h3>
             <span class="review-quote-mark" aria-hidden="true">“</span>
             <blockquote>Endlich vergesse ich keine laufenden Kosten und Abos mehr.</blockquote>
             <cite><span class="review-avatar" aria-hidden="true"></span>Leo G.</cite>
           </article>
-          <article class="review-card" tabindex="0">
+          <article class="review-card">
+            <h3 class="sr-only">Bewertung von Günter R.</h3>
             <span class="review-quote-mark" aria-hidden="true">“</span>
             <blockquote>Die einfache Übersicht hilft mir, meine Finanzen im Alltag besser zu organisieren.</blockquote>
             <cite><span class="review-avatar" aria-hidden="true"></span>Günter R.</cite>
           </article>
-          <article class="review-card" tabindex="0">
+          <article class="review-card">
+            <h3 class="sr-only">Bewertung von Dagma N.</h3>
             <span class="review-quote-mark" aria-hidden="true">“</span>
             <blockquote>Mir ist wichtig, dass Centora nur lesen und keine Überweisungen tätigen kann.</blockquote>
             <cite><span class="review-avatar" aria-hidden="true"></span>Dagma N.</cite>
@@ -297,7 +304,6 @@
       </div>
     </section>
 
-    </article>
   </main>
 
   <footer class="footer">
