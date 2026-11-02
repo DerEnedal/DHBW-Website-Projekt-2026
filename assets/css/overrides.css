@@ -568,10 +568,6 @@
     background-color: var(--color-bg);
   }
 
-  :root .review-card {
-    background-color: #267d5d;
-  }
-
   :root .review-card cite {
     color: #ffffff;
   }
