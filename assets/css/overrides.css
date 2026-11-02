@@ -322,6 +322,10 @@
     min-height: 150px;
   }
 
+  .reviews-grid .review-card:nth-child(even) {
+    background-color: var(--color-accent-soft);
+  }
+
   .review-card:nth-child(2),
   .review-card:nth-child(5) {
     transform: none;
