@@ -49,7 +49,7 @@
   width: 440px;
   height: 440px;
   border-radius: 50%;
-  background-color: var(--color-accent-soft);
+  background-color: var(--color-accent-bg);
   transform: translateX(-50%);
 }
 
@@ -708,7 +708,7 @@
 .timeline-now .timeline-dot {
   background-color: var(--color-accent);
   border-color: var(--color-accent);
-  box-shadow: 0 0 0 6px var(--color-accent-soft);
+  box-shadow: 0 0 0 6px var(--color-accent-bg);
 }
 
 .timeline-date {
@@ -926,7 +926,7 @@
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  background-color: var(--color-accent-soft);
+  background-color: var(--color-accent-bg);
   transform: translateX(-50%);
 }
 
@@ -1476,7 +1476,7 @@
 }
 
 .store-buttons-light .store-button:hover {
-  background-color: var(--color-accent-soft);
+  background-color: var(--color-accent-bg);
 }
 
 .store-buttons-light .store-button img {

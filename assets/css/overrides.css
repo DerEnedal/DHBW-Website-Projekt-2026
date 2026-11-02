@@ -322,10 +322,6 @@
     min-height: 150px;
   }
 
-  .reviews-grid .review-card:nth-child(even) {
-    background-color: var(--color-accent-soft);
-  }
-
   .review-card:nth-child(2),
   .review-card:nth-child(5) {
     transform: none;
@@ -429,12 +425,11 @@
   /* --- Farbpalette (Waldgrün) --- */
   :root {
     color-scheme: dark;
-
     --color-bg: #0f1a16;
     --color-surface: #131f1a;
     --color-white: #172520;           /* Karten */
     --color-placeholder: #2a3b34;
-    --color-accent-soft: #172520;
+    --color-accent-bg: #172520;
     --color-primary: #4ac485;
     --color-accent: #12b982ce;
     --color-accent-light: #1c7b5c;

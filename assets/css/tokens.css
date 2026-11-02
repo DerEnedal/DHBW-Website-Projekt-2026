@@ -1,43 +1,40 @@
-/* ==========================================================
-   ===== Variablen =====
-   Alle Farben und Schriften stehen nur hier. Wer eine Farbe
-   ändern will, ändert sie einmal hier – überall gleich.
-   ========================================================== */
+/* ===== alle Farben und Schriften als variablen 
+(nur hell Modus, ausser bei override nicht geändert) ===== */
 
 :root {
-  /* Markenfarben */
-  --color-primary: #0f3d2e;        /* Dunkelgrün: Text, Buttons */
-  --color-accent: #2c7c54;         /* Akzentgrün: Hover, Eyebrow, Linien */
-  --color-accent-soft: #e8f4ee;    /* zarter Grünton hinter Handys */
-  --color-accent-light: #7fd8a6;   /* helles Grün auf dunklen Flächen */
-  --color-focus-ring: var(--color-accent);
+  /* Hauptfarben */
+  --color-primary: #0f3d2e;        /* Dunkelgrün für Überschriften, text und Buttons */
+  --color-accent: #2c7c54;         /* Akzentgrün: Hover, Eyebrow, Linien, sowie andere kleinere Elemente für den Kontrast (z.b. Zitatzeichen, häcken etc.)  */
+  --color-accent-bg: #e8f4ee;    /* hellerer Grünton hinter Handys als Kreis und kleinere bg Elmente (wieder Kontrast) */
+  --color-accent-light: #7fd8a6;   /* helles Grün auf dunklen Flächen z.b. sticker, häcken etc. */
+  --color-focus-ring: var(--color-accent-light); /* Fokus-Ring für Buttons und Links beim taben*/
 
-  /* Flächen (neutral, wie auf der Funktionen-Seite) */
+  /* Flächen */
   --color-bg: #ffffff;             /* Seitenhintergrund */
-  --color-surface: #f5f5f5;        /* graue Bänder */
-  --color-placeholder: #e8e8e8;    /* Bild-Platzhalter */
-  --color-white: #ffffff;
+  --color-surface: #f5f5f5;        /* graue Bänder und hintergund*/
+  --color-placeholder: #e8e8e8;    /* Bild-Platzhalter (falls ein Bild nicht ladet */
+  --color-white: #ffffff;         /* weiße Flächen, z.b. Karten und akzente etc. */  
 
   /* Text und Linien */
-  --color-text: #0f3d2e;
-  --color-text-muted: #555555;     /* Fließtext */
-  --color-text-soft: #6e6a6a;      /* kleine Hinweise */
-  --color-text-faint: #3e583f;     /* inaktive Tabs */
-  --color-border: #e5e5e5;
-  --color-border-strong: #d4d4d4;
+  --color-text: var(--color-primary); /* Standardschrift color primary */
+  --color-text-muted: #555555;     /*weniger hervorgehobene Texte */
+  --color-text-soft: #6e6a6a;      /*  auch weniger hervostechen für kontrast*/
+  --color-text-faint: #3e583f;     /* inaktive Tabs für bei Index.html*/
+  --color-border: #e5e5e5;         /* standard rand */
+  --color-border-strong: #d4d4d4;  /* kontraststarker rand, z.b. Tabelle */
 
   /* Dunkle Flächen */
-  --color-dark: #111111;
-  --color-dark-muted: #a8a8a8;
-  --color-dark-accent: #1c2b24;
-  --color-footer: #213f31;
-  --color-footer-text: #c9d8d1;
+  --color-dark: #111111;          /* dunkler Hintergrund für store buttons, etc. */
+  --color-dark-muted: #a8a8a8;    /* zusatzlich für dunkle Flächen, z.b. store buttons */
+  --color-dark-accent: #1c2b24;   /*trennlinieen und andere kleine Elemente auf dunklen Flächen */
+  --color-footer: #213f31;        /*footer bg*/
+  --color-footer-text: #c9d8d1;   /*footer text*/
 
   /* DHBW */
-  --color-dhbw: #d4011a;
-  --color-dhbw-soft: #ffffff;
+  --color-dhbw: #d4011a; /* stanni DH rot */
+  --color-dhbw-soft: var(--color-white); /* nocht direkt ändern wegen darkmode */
 
   /* Schriften */
-  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --font-serif: Georgia, "Times New Roman", serif;
+  --font-sans: IBM Plex Sans; /* funktional, modern, kompetent auch aber nahbar und einladend */
+  --font-serif: Source Serif 4; /* seriös, vertrauenswürdig, akademisch, aber auch nahbar */
 }
