@@ -23,6 +23,7 @@
 }
 
 .hero-copy {
+  position: relative;
   transform: translateY(-100px);
 }
 
@@ -94,6 +95,94 @@
 .hero-badge strong {
   font-size: 0.85rem;
   color: var(--color-accent);
+}
+
+.hero-reviews {
+  position: absolute;
+  top: calc(100% + 2rem);
+  right: 0;
+  left: 0;
+}
+
+.hero-reviews h2 {
+  margin-bottom: 0.8rem;
+  font-family: var(--font-sans);
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.3;
+}
+
+.hero-review-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.hero-review-store {
+  display: inline-flex;
+  min-height: 56px;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.45rem 1rem;
+  border-radius: 18px;
+  background-color: var(--color-dark);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.hero-review-store img {
+  width: 28px;
+  height: 28px;
+}
+
+.hero-review-store .hero-review-store-label {
+  display: block;
+  color: #a8a8a8;
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+.hero-review-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0.65rem 0 1.15rem;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.hero-review-rating strong {
+  color: var(--color-text);
+}
+
+.hero-review-stars {
+  color: #8e7317;
+  font-size: 1rem;
+  letter-spacing: -0.08em;
+}
+
+.hero-review blockquote {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.hero-review-author {
+  margin: 0.5rem 0 0;
+  color: var(--color-text-soft);
+  font-size: 0.8rem;
+}
+
+.hero-review-note {
+  margin: 0.65rem 0 0;
+  color: var(--color-text-soft);
+  font-size: 0.75rem;
+  line-height: 1.4;
 }
 
 /* ===== Startseite: Banner 2 ===== */
@@ -271,14 +360,14 @@
 #feature-2:focus-visible ~ .features-grid .tab-2 label,
 #feature-3:focus-visible ~ .features-grid .tab-3 label,
 #feature-4:focus-visible ~ .features-grid .tab-4 label {
-  outline: 2px solid var(--color-accent);
+  outline: 2px solid var(--color-focus-ring);
   outline-offset: 4px;
 }
 
-/* ===== Startseite: Banner 4 ===== */
+/* ===== Startseite: Banner 5 ===== */
 
-/* Kein Abstand zwischen Banner 4 und Footer */
-.main:has(> .newsletter-band:last-child) {
+/* Kein Abstand zwischen Banner 5 und Footer */
+.main:has(.home-newsletter-band:last-child) {
   padding-bottom: 0;
 }
 
@@ -286,15 +375,21 @@
   padding-top: 5rem;
 }
 
+.newsletter-band.home-newsletter-band {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  background-color: var(--color-bg);
+}
+
 .newsletter {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: end;
+  align-items: center;
 }
 
 .newsletter-text {
-  padding-bottom: 5rem;
+  padding-bottom: 0;
 }
 
 .newsletter-text > p {
@@ -798,6 +893,13 @@
   line-height: 1.02;
 }
 
+.features-hero h1:focus-visible,
+.feature h2:focus-visible,
+.features-cta h2:focus-visible {
+  outline: 2px solid var(--color-focus-ring);
+  outline-offset: 6px;
+}
+
 .feature .lead {
   max-width: 430px;
   margin: 1.25rem 0 1.6rem;
@@ -944,7 +1046,7 @@
 /* ===== Sicherheit: Banner 2 (Drei Versprechen) ===== */
 
 .promises-band {
-  margin-top: 0; /* direkt unter dem Hero */
+  margin-top: 4rem;
   padding: 5.5rem 0;
 }
 
@@ -1004,6 +1106,141 @@
   line-height: 1.55;
   color: var(--color-text-muted);
 }
+
+/* ===== Startseite: Banner 4 (Beispielstimmen) ===== */
+
+.reviews {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.reviews-header {
+  text-align: center;
+}
+
+.reviews-header h2 {
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
+}
+
+.reviews-tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 2rem;
+  margin: 2rem 0 3rem;
+  padding: 1.25rem 0;
+  border-top: 1px solid var(--color-border-strong);
+  border-bottom: 1px solid var(--color-border-strong);
+  list-style: none;
+}
+
+.reviews-tags li {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.reviews-tags li::before {
+  content: "✓";
+  margin-right: 0.45rem;
+  color: var(--color-accent);
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 1.25rem;
+}
+
+.review-card {
+  position: relative;
+  display: flex;
+  min-height: 220px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0;
+  background-color: var(--color-white);
+  box-shadow: 0 12px 30px rgba(15, 61, 46, 0.06);
+}
+
+.review-card:focus-visible {
+  outline: 3px solid var(--color-focus-ring);
+  outline-offset: 4px;
+}
+
+.review-quote-mark {
+  height: 2rem;
+  color: var(--color-accent);
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.review-card:nth-child(2),
+.review-card:nth-child(5) {
+  transform: translateY(1.5rem);
+}
+
+.review-card blockquote {
+  min-width: 0;
+  margin: 0;
+  color: var(--color-text);
+  font-size: clamp(1.05rem, 1.3vw, 1.2rem);
+  font-weight: 500;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+.review-card cite {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: auto;
+  color: var(--color-accent);
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.review-avatar {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #d7ddda;
+}
+
+.review-avatar::before,
+.review-avatar::after {
+  position: absolute;
+  left: 50%;
+  content: "";
+  background-color: #9aa8a1;
+  transform: translateX(-50%);
+}
+
+.review-avatar::before {
+  top: 8px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.review-avatar::after {
+  bottom: -7px;
+  width: 27px;
+  height: 22px;
+  border-radius: 50% 50% 0 0;
+}
+
 
 /* ===== Sicherheit: Banner 3–5 (nutzen .feature von der Funktionen-Seite) ===== */
 
@@ -1343,7 +1580,7 @@
 /* Tastatur-Fokus sichtbar machen */
 #billing-monthly:focus-visible ~ .plans-head label[for="billing-monthly"],
 #billing-yearly:focus-visible ~ .plans-head label[for="billing-yearly"] {
-  outline: 2px solid var(--color-accent);
+  outline: 2px solid var(--color-focus-ring);
   outline-offset: 2px;
 }
 
@@ -1515,7 +1752,7 @@
 }
 
 .compare-scroll:focus-visible {
-  outline: 2px solid var(--color-accent);
+  outline: 2px solid var(--color-focus-ring);
   outline-offset: 2px;
 }
 
@@ -1668,4 +1905,3 @@ border-bottom: 2px solid var(--color-primary);
 .footer-nav a:hover {
   color: var(--color-white);
 }
-

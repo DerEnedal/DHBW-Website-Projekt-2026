@@ -10,6 +10,7 @@
   --color-accent: #2c7c54;         /* Akzentgrün: Hover, Eyebrow, Linien */
   --color-accent-soft: #e8f4ee;    /* zarter Grünton hinter Handys */
   --color-accent-light: #7fd8a6;   /* helles Grün auf dunklen Flächen */
+  --color-focus-ring: var(--color-accent);
 
   /* Flächen (neutral, wie auf der Funktionen-Seite) */
   --color-bg: #ffffff;             /* Seitenhintergrund */
@@ -41,4 +42,3 @@
   --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font-serif: Georgia, "Times New Roman", serif;
 }
-

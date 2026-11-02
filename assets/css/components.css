@@ -9,6 +9,12 @@ h2 {
   letter-spacing: -0.02em;
 }
 
+h1:focus-visible,
+h2:focus-visible {
+  outline: 2px solid var(--color-focus-ring);
+  outline-offset: 4px;
+}
+
 /* Abschnitts-Überschriften (Startseite, Sicherheit, Über uns, Jetzt starten) */
 .problems-intro h2,
 .features-text h2,
@@ -129,7 +135,7 @@ h2 {
   transform: translateY(0);
   opacity: 1;
   pointer-events: auto;
-  outline: 2px solid var(--color-accent);
+  outline: 2px solid var(--color-focus-ring);
   outline-offset: 3px;
 }
 
@@ -213,4 +219,3 @@ h2 {
 .nav a:hover {
   color: var(--color-accent);
 }
-
