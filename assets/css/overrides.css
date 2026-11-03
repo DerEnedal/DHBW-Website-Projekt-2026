@@ -74,20 +74,6 @@
     font-size: 0.85rem;
   }
 
-  .hero-review-list {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-reviews {
-    position: static;
-    margin-top: 2rem;
-    text-align: center;
-  }
-
-  .hero-review-rating {
-    justify-content: center;
-  }
-
   .hero-phones {
     height: 460px;
     transform: none;
@@ -409,9 +395,6 @@
     transform: none;
   }
 
-  .hero-review-list {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* ==========================================================
@@ -535,11 +518,6 @@
     color: var(--color-white);
   }
 
-  :root .hero-review-stars {
-    color: #caa21f;
-    font-size: 1rem;
-    letter-spacing: -0.08em;
-  }
   :root .store-button small,
   :root .store-button span:first-child {
     color: #6ee7a8;
