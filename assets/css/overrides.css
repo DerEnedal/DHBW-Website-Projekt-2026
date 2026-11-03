@@ -46,7 +46,7 @@
   }
 
   /*     Handy: Startseite Banner 1     */
-  .hero-inner {
+  .home-hero-split {
     grid-template-columns: 1fr;
     text-align: center;
   }

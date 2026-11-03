@@ -9,7 +9,7 @@
 /* ===== Startseite: Banner 1 ===== */
 
 /* 2 spalten*/
-.hero-inner {
+.home-hero-split {
   display: grid;
   grid-template-columns: 1.05fr 1fr;
   align-items: center;
@@ -94,7 +94,7 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* Formatierung erklärende Zeile schwebenden Karte. */
+/* Formatierung erklärende Zeile schwebenden Karte */
 .hero-badge span {
   display: block;
   font-size: 0.75rem;
@@ -109,31 +109,31 @@
 
 /* ===== Startseite: Banner 2 ===== */
 
-/* Gibt dem Problem Banner vertikalen Innenabstand. */
+/* Gibt Banner vertikalen Innenabstand. */
 .problems-band {
   padding: 5rem 0;
 }
 
-/* Teilt den Problem Banner in Einleitung und Liste. */
+/* Teilt Problem Banner in Einleitung und Liste. */
 .problems {
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;
   gap: 4rem;
 }
 
-/* Formatiert den Erklärungstext neben der ProblemlisteL */
+/* Formatiert den Erklärungstext neben der Problemliste */
 .problems-intro p {
   margin-top: 1rem;
   color: var(--color-text-muted);
   line-height: 1.6;
 }
 
-/* Entfernt Aufzählungszeichen aus der Problemliste. */
+/* Entfernt Aufzählungszeichen aus der Problemliste*/
 .problems-list {
   list-style: none;
 }
 
-/* Ordnet ein Problem mit Icon und Text an und trennt es von der nächsten Zeile. */
+/* Ordnet ein Problem mit Icon und Text an und trennt es von der nächsten Zeile */
 .problem {
   display: flex;
   align-items: flex-start;
@@ -147,12 +147,12 @@
   padding-top: 0;
 }
 
-/* Entfernt die Trennlinie unter dem letzten Problem. */
+/* Entfernt die Trennlinie unter dem letzten Problem */
 .problem:last-child {
   border-bottom: none;
 }
 
-/* Lässt den Beschreibungstext den verfügbaren Platz einnehmen. */
+/* Lässt Beschreibungstext verfügbaren Platz einnehmen */
 .problem-text {
   flex: 1;
 }
@@ -163,7 +163,7 @@
   font-weight: 600;
 }
 
-/* Formatiert die Beschreibung eines Problems kompakt und gut lesbar. */
+/* Formatiert die Beschreibung eines Problems kompakt */
 .problem-text p {
   margin-top: 0.3rem;
   font-size: 0.95rem;
@@ -171,13 +171,13 @@
   color: var(--color-text-muted);
 }
 
-/* Ordnet mehrere Markenlogos überlappend nebeneinander an. */
+/* Ordnet Markenlogos überlappend nebeneinander */
 .logo-stack {
   display: flex;
   padding-left: 10px;
 }
 
-/* Gestaltet jedes Logo als runden, überlappenden Hintergrund. */
+/* Gestaltet jedes Logo als runden Hintergrund */
 .logo-stack span {
   width: 40px;
   height: 40px;
@@ -189,13 +189,13 @@
   place-items: center;
 }
 
-/* Legt die Größe der Logos im Markenstapel fest. */
+/* Legt Größe der Logos im Markenstapel fest */
 .logo-stack img {
   width: 20px;
   height: 20px;
 }
 
-/* Fixiert die Größe der kleinen Diagramm Grafik. */
+/* Fixiert Größe der kleinen Diagramm Grafik */
 .problem-chart {
   width: 100px;
   height: 38px;
@@ -204,19 +204,19 @@
 
 /* ===== Startseite: Banner 3 ===== */
 
-/* Setzt den oberen Abstand für den Feature Banner. */
+/* oberen Abstand für Feature Banner */
 .features {
   padding-top: 6rem;
 }
 
-/* Radio Buttons unsichtbar, aber per Tastatur bedienbar */
+/* Radio Buttons unsichtbar bedienbar */
 .feature-radio {
   position: absolute;
   opacity: 0;
   pointer-events: none;
 }
 
-/* Teilt den Feature Banner in Text  und Bildspalte. */
+/* Teilt Feature Banner */
 .features-grid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -224,34 +224,34 @@
   align-items: end;
 }
 
-/* Gibt dem Textbereich unterhalb seiner Inhalte etwas Raum. */
+/* Textbereich unterhalb Inhalte etwas Platz */
 .features-text {
   padding-bottom: 3rem;
 }
 
-/* Trennt die Abschnittsüberschrift von den Feature Tabs. */
+/* Trennt Abschnittsüberschrift von den Feature Tabs */
 .features-text h2 {
   margin-bottom: 2rem;
 }
 
-/* Gestaltet einen einzelnen Eintrag der Feature Tab Liste. */
+/* Gestaltet einzelnen Eintrag der Feature Tab Liste */
 .feature-tab {
   padding: 1.1rem 0;
   border-top: 1px solid var(--color-border);
 }
 
-/* Schließt die Tab Liste mit einer unteren Linie ab. */
+/* Schließt Tab Liste mit unteren Linie ab */
 .feature-tab:last-child {
   border-bottom: 1px solid var(--color-border);
 }
 
-/* Entfernt Standardabstände und übernimmt die Schriftgröße des Tabs. */
+/* Entfernt Standardabstände und übernimmt die Schriftgröße des Tabs */
 .feature-tab h3 {
   margin: 0;
   font-size: inherit;
 }
 
-/* Gestaltet den anklickbaren Titel eines Feature Tabs. */
+/* gestaltet anklickbaren Titel Feature Tabs */
 .feature-tab label {
   font-family: var(--font-serif);
   font-size: 1.35rem;
@@ -259,30 +259,30 @@
   cursor: pointer;
 }
 
-/* Färbt den Tab Titel beim Darüberfahren als interaktives Signal. */
+/* färbt Tab Titel beim Darüberfahren als interaktives Signal */
 .feature-tab label:hover {
   color: var(--color-primary);
 }
 
-/* Versteckt die Beschreibung, bis der zugehörige Tab aktiv ist. */
+/* versteckt die Beschreibung bis zugehörige Tab aktiv */
 .feature-desc {
   display: none;
 }
 
-/* Formatiert den Beschreibungstext eines aktiven Feature Tabs. */
+/* Formatiert Beschreibungstext aktiven Feature Tabs*/
 .feature-desc p {
   margin: 0.6rem 0 0.8rem;
   line-height: 1.6;
   color: var(--color-text-muted);
 }
 
-/* Blendet Feature Bilder zunächst aus; aktivierte Tabs zeigen ihr Bild. */
+/* Blendet Feature Bilder zunächst aus; aktivierte Tabs zeigen ihr Bild */
 .features-image img {
   display: none; /* nur das Bild des aktiven Tabs wird gezeigt */
   max-width: 560px;
 }
 
-/* Aktiver Tab: Linie, dunkler Text, Beschreibung und passendes Bild */
+/* Aktiver Tab Linie, dunkler Text, Beschreibung und passendes Bild */
 #feature-1:checked ~ .features-grid .tab-1,
 #feature-2:checked ~ .features-grid .tab-2,
 #feature-3:checked ~ .features-grid .tab-3,
@@ -319,23 +319,23 @@
 
 /* ===== Startseite: Banner 4 (Beispielstimmen) ===== */
 
-/* Gibt dem Bewertungsbanner oben und unten Abstand. */
+/* Gibt dem Bewertungsbanner oben und unten Abstand */
 .reviews {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
 
-/* Zentriert den Kopfbereich der Bewertungen. */
+/* Zentriert den Kopfbereich */
 .reviews-header {
   text-align: center;
 }
 
-/* Setzt die Größe der Bewertungsüberschrift. */
+/* Größe der Bewertungsüberschrift */
 .reviews-header h2 {
   font-size: clamp(2.4rem, 5vw, 3.5rem);
 }
 
-/* Ordnet die Stichworte zentriert mit Trennlinien an. */
+/* Ordnet Stichworte zentriert mit Trennlinien */
 .reviews-tags {
   display: flex;
   justify-content: center;
@@ -348,21 +348,21 @@
   list-style: none;
 }
 
-/* Formatiert die einzelnen Stichworte der Bewertungsleiste. */
+/* Formatiert einzelnen Stichworte der Bewertungsleiste */
 .reviews-tags li {
   color: var(--color-text-muted);
   font-size: 0.9rem;
   font-weight: 600;
 }
 
-/* Setzt ein grünes Häkchen vor jedes Stichwort. */
+/* Setzt grünes Häkchen vor Stichwort */
 .reviews-tags li::before {
   content: "✓";
   margin-right: 0.45rem;
   color: var(--color-accent);
 }
 
-/* Ordnet die Bewertungskarten in drei gleich breite Spalten. */
+/* ordnet Bewertungskarten drei gleich breite Spalten */
 .reviews-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -370,7 +370,7 @@
   gap: 1.25rem;
 }
 
-/* Richtet Zitat, Text und Autor innerhalb einer Bewertungskarte aus. */
+/* Richtet Zitat, Text und Autor innerhalb einer Bewertungskarte aus */
 .review-card {
   position: relative;
   display: flex;
@@ -382,13 +382,13 @@
   border-radius: 0;
 }
 
-/* Macht den Fokus einer per Tastatur erreichbaren Bewertung sichtbar. */
+/* macht Fokus per Tastatur erreichbaren Bewertung sichtbar */
 .review-card:focus-visible {
   outline: 3px solid var(--color-focus-ring);
   outline-offset: 4px;
 }
 
-/* Gestaltet das große Anführungszeichen einer Bewertung. */
+/* Gestaltet große Anführungszeichen */
 .review-quote-mark {
   height: 2rem;
   color: var(--color-accent);
@@ -398,13 +398,12 @@
   line-height: 1;
 }
 
-/* Versetzt die zweite und fünfte Karte leicht nach unten. */
-.review-card:nth-child(2),
-.review-card:nth-child(5) {
+/* Versetzt zweite leicht nach unten. */
+.review-card:nth-child(2){
   transform: translateY(1.5rem);
 }
 
-/* Formatiert den Zitattext und verhindert überlaufende Wörter. */
+/* formatiert Zitattext, verhindert überlaufende Wörter */
 .review-card blockquote {
   min-width: 0;
   margin: 0;
@@ -415,7 +414,7 @@
   overflow-wrap: break-word;
 }
 
-/* Ordnet Autorennamen und Avatar am Kartenende an. */
+/* ordnet Autorennamen und Avatar am Kartenende */
 .review-card cite {
   display: flex;
   align-items: center;
@@ -427,7 +426,7 @@
   font-style: normal;
 }
 
-/* Zeichnet den runden Platzhalter Avatar für Bewertende. */
+/* zeichnet runde Platzhalter Avatar */
 .review-avatar {
   position: relative;
   display: inline-block;
@@ -439,7 +438,7 @@
   background-color: #d7ddda;
 }
 
-/* Positioniert die Kopf  und Körperformen des Platzhalter Avatars. */
+/* Positioniert Kopf und Körperformen Avatars. */
 .review-avatar::before,
 .review-avatar::after {
   position: absolute;
@@ -465,25 +464,25 @@
 
 /* ===== Startseite: Banner 5 (Newsletter) ===== */
 
-/* Auf der Startseite endet der Inhalt direkt am Footer. */
-/* Entfernt den zusätzlichen unteren Abstand, wenn der Newsletter der letzte Abschnitt ist. */
+/* Startseite endet Inhalt am Footer. */
+/* Entfernt zusätzlichen unteren Abstand (wenn Newsletter der letzte Abschnitt ist) */
 .main:has(.home-newsletter-band:last-child) {
   padding-bottom: 0;
 }
 
-/* Setzt den oberen Abstand für Newsletter Bereiche. */
+/* obere Abstand Newsletter Bereich */
 .newsletter-band {
   padding-top: 5rem;
 }
 
-/* Hebt den Newsletter der Startseite mit eigenem Abstand und Hintergrund ab. */
+/* Hebt Newsletter Startseite mit eigenem Abstand und Hintergrund ab */
 .newsletter-band.home-newsletter-band {
   margin-top: 2rem;
   padding-top: 2rem;
   background-color: var(--color-bg);
 }
 
-/* Stellt Formulartext und Bild in zwei Spalten nebeneinander. */
+/*  Formulartext und Bild in zwei Spalten */
 .newsletter {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -491,19 +490,19 @@
   align-items: center;
 }
 
-/* Verhindert zusätzlichen Innenabstand im Newsletter Textbereich. */
+/* zusätzlich Innenabstand im Newsletter Textbereich. */
 .newsletter-text {
   padding-bottom: 0;
 }
 
-/* Formatiert den Newsletter Einleitungstext. */
+/* Formatiert Newsletter Einleitungstext */
 .newsletter-text > p {
   margin: 1rem 0 1.5rem;
   line-height: 1.6;
   color: var(--color-text-muted);
 }
 
-/* Baut das Eingabefeld und den Absende Button als gemeinsame Formularzeile. */
+/* Baut Eingabefeld und Absende Button als Formularzeile */
 .newsletter-form {
   display: flex;
   max-width: 420px;
@@ -513,12 +512,12 @@
   overflow: hidden;
 }
 
-/* Hebt den Formularrahmen hervor, sobald ein Feld fokussiert ist. */
+/* hebt den Formularrahmen hervor wenn Feld fokussiert */
 .newsletter-form:focus-within {
   border-color: var(--color-accent);
 }
 
-/* Passt das Mail Eingabefeld an die Formularzeile an. */
+/* passt Mail Eingabefeld an die Formularzeile an */
 .newsletter-form input {
   flex: 1;
   min-width: 0;
@@ -529,12 +528,12 @@
   color: var(--color-text);
 }
 
-/* Entfernt den doppelten Fokusrahmen des Eingabefelds. */
+/* Entfernt doppelten Fokusrahmen */
 .newsletter-form input:focus {
   outline: none;
 }
 
-/* Gestaltet den Newsletter Absende Button. */
+/* Gestaltet Newsletter senden Button */
 .newsletter-form button {
   padding: 0 1.4rem;
   border: none;
@@ -545,24 +544,24 @@
   cursor: pointer;
 }
 
-/* Ändert die Buttonfarbe beim Darüberfahren. */
+/* ändert Buttonfarbe beim rüberrfahren */
 .newsletter-form button:hover {
   background: var(--color-accent);
 }
 
-/* Zeigt einen dezenten Hinweis unter dem Newsletter Formular. */
+/* Zeigt dezenten Hinweis unter dem newsletter Formular */
 .newsletter-note {
   margin-top: 0.8rem;
   font-size: 0.8rem;
   color: var(--color-text-soft);
 }
 
-/* Unterstreicht den Link im Newsletter Hinweis. */
+/* unterstreicht den Link Hinweis */
 .newsletter-note a {
   text-decoration: underline;
 }
 
-/* Begrenzt die Breite des Newsletter Bilds. */
+/* begreznt Breite des Newsletter Bilds. */
 .newsletter-image img {
   max-width: 460px;
 }
