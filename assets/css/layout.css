@@ -16,36 +16,36 @@
   gap: 2rem;
 }
 
-/* Skaliert die Hauptüberschrift des Startseiten-Hero responsiv. */
+/* Startseiten Hero responsiv */
 .hero h1 {
   font-size: clamp(2.5rem, 5vw, 4rem);
 }
 
-/* Setzt Abstand um den Einleitungstext im Hero. */
+/* Abstand Einleitungstext im Hero. */
 .hero .lead {
   margin: 1.25rem 0 2rem;
 }
 
-/* Verschiebt den Textbereich des Hero leicht nach oben. */
+/* Verschiebt Textbereich des Hero nach oben. */
 .hero-copy {
   position: relative;
   transform: translateY(-30 px);
 }
 
-/* Ordnet die Aktionslinks nebeneinander an. */
+/* Aktionslinks nebeneinander */
 .hero-actions {
   display: flex;
   align-items: center;
   gap: 1.5rem;
 }
 
-/* Zwei Handys: Konten vorne, Sparziele schräg dahinter */
+/* Zwei Handys */
 .hero-phones {
   position: relative;
   height: 510px;
 }
 
-/* Grüner Kreis hinter den Handys */
+/* Grüner Kreis hinter Handys */
 .hero-phones::before {
   content: "";
   position: absolute;
@@ -58,14 +58,14 @@
   transform: translateX(-50%);
 }
 
-/* Positioniert beide Handy-Bilder absolut innerhalb des Hero-Motivs. */
+/* Positioniert beide Handy Bilder absolut innerhalb des Hero Motivs. */
 .hero-phone-back,
 .hero-phone-front {
   position: absolute;
   height: auto;
 }
 
-/* Platziert das hintere Handy leicht gedreht links im Motiv. */
+/* hintere Handy leicht */
 .hero-phone-back {
   left: 8%;
   top: 60px;
@@ -73,7 +73,7 @@
   transform: rotate(-8deg);
 }
 
-/* Platziert das vordere Handy rechts und legt es über das hintere. */
+/* vordere Handy rechts über das hintere. */
 .hero-phone-front {
   right: 6%;
   top: 0;
@@ -94,14 +94,14 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* Formatiert die erklärende Zeile der schwebenden Karte. */
+/* Formatierung erklärende Zeile schwebenden Karte. */
 .hero-badge span {
   display: block;
   font-size: 0.75rem;
   color: var(--color-text-soft);
 }
 
-/* Hebt den Wert in der schwebenden Karte farblich hervor. */
+/* Hightlight Wert in der schwebenden Karte */
 .hero-badge strong {
   font-size: 0.85rem;
   color: var(--color-accent);
@@ -109,19 +109,19 @@
 
 /* ===== Startseite: Banner 2 ===== */
 
-/* Gibt dem Problem-Banner vertikalen Innenabstand. */
+/* Gibt dem Problem Banner vertikalen Innenabstand. */
 .problems-band {
   padding: 5rem 0;
 }
 
-/* Teilt den Problem-Banner in Einleitung und Liste. */
+/* Teilt den Problem Banner in Einleitung und Liste. */
 .problems {
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;
   gap: 4rem;
 }
 
-/* Formatiert den Erklärungstext neben der Problemliste. */
+/* Formatiert den Erklärungstext neben der ProblemlisteL */
 .problems-intro p {
   margin-top: 1rem;
   color: var(--color-text-muted);
@@ -195,7 +195,7 @@
   height: 20px;
 }
 
-/* Fixiert die Größe der kleinen Diagramm-Grafik. */
+/* Fixiert die Größe der kleinen Diagramm Grafik. */
 .problem-chart {
   width: 100px;
   height: 38px;
@@ -204,19 +204,19 @@
 
 /* ===== Startseite: Banner 3 ===== */
 
-/* Setzt den oberen Abstand für den Feature-Banner. */
+/* Setzt den oberen Abstand für den Feature Banner. */
 .features {
   padding-top: 6rem;
 }
 
-/* Radio-Buttons unsichtbar, aber per Tastatur bedienbar */
+/* Radio Buttons unsichtbar, aber per Tastatur bedienbar */
 .feature-radio {
   position: absolute;
   opacity: 0;
   pointer-events: none;
 }
 
-/* Teilt den Feature-Banner in Text- und Bildspalte. */
+/* Teilt den Feature Banner in Text  und Bildspalte. */
 .features-grid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -229,18 +229,18 @@
   padding-bottom: 3rem;
 }
 
-/* Trennt die Abschnittsüberschrift von den Feature-Tabs. */
+/* Trennt die Abschnittsüberschrift von den Feature Tabs. */
 .features-text h2 {
   margin-bottom: 2rem;
 }
 
-/* Gestaltet einen einzelnen Eintrag der Feature-Tab-Liste. */
+/* Gestaltet einen einzelnen Eintrag der Feature Tab Liste. */
 .feature-tab {
   padding: 1.1rem 0;
   border-top: 1px solid var(--color-border);
 }
 
-/* Schließt die Tab-Liste mit einer unteren Linie ab. */
+/* Schließt die Tab Liste mit einer unteren Linie ab. */
 .feature-tab:last-child {
   border-bottom: 1px solid var(--color-border);
 }
@@ -251,7 +251,7 @@
   font-size: inherit;
 }
 
-/* Gestaltet den anklickbaren Titel eines Feature-Tabs. */
+/* Gestaltet den anklickbaren Titel eines Feature Tabs. */
 .feature-tab label {
   font-family: var(--font-serif);
   font-size: 1.35rem;
@@ -259,7 +259,7 @@
   cursor: pointer;
 }
 
-/* Färbt den Tab-Titel beim Darüberfahren als interaktives Signal. */
+/* Färbt den Tab Titel beim Darüberfahren als interaktives Signal. */
 .feature-tab label:hover {
   color: var(--color-primary);
 }
@@ -269,14 +269,14 @@
   display: none;
 }
 
-/* Formatiert den Beschreibungstext eines aktiven Feature-Tabs. */
+/* Formatiert den Beschreibungstext eines aktiven Feature Tabs. */
 .feature-desc p {
   margin: 0.6rem 0 0.8rem;
   line-height: 1.6;
   color: var(--color-text-muted);
 }
 
-/* Blendet Feature-Bilder zunächst aus; aktivierte Tabs zeigen ihr Bild. */
+/* Blendet Feature Bilder zunächst aus; aktivierte Tabs zeigen ihr Bild. */
 .features-image img {
   display: none; /* nur das Bild des aktiven Tabs wird gezeigt */
   max-width: 560px;
@@ -308,7 +308,7 @@
   display: block;
 }
 
-/* Tastatur-Fokus sichtbar machen */
+/* Tastatur Fokus sichtbar machen */
 #feature-1:focus-visible ~ .features-grid .tab-1 label,
 #feature-2:focus-visible ~ .features-grid .tab-2 label,
 #feature-3:focus-visible ~ .features-grid .tab-3 label,
@@ -427,7 +427,7 @@
   font-style: normal;
 }
 
-/* Zeichnet den runden Platzhalter-Avatar für Bewertende. */
+/* Zeichnet den runden Platzhalter Avatar für Bewertende. */
 .review-avatar {
   position: relative;
   display: inline-block;
@@ -439,7 +439,7 @@
   background-color: #d7ddda;
 }
 
-/* Positioniert die Kopf- und Körperformen des Platzhalter-Avatars. */
+/* Positioniert die Kopf  und Körperformen des Platzhalter Avatars. */
 .review-avatar::before,
 .review-avatar::after {
   position: absolute;
@@ -471,7 +471,7 @@
   padding-bottom: 0;
 }
 
-/* Setzt den oberen Abstand für Newsletter-Bereiche. */
+/* Setzt den oberen Abstand für Newsletter Bereiche. */
 .newsletter-band {
   padding-top: 5rem;
 }
@@ -491,19 +491,19 @@
   align-items: center;
 }
 
-/* Verhindert zusätzlichen Innenabstand im Newsletter-Textbereich. */
+/* Verhindert zusätzlichen Innenabstand im Newsletter Textbereich. */
 .newsletter-text {
   padding-bottom: 0;
 }
 
-/* Formatiert den Newsletter-Einleitungstext. */
+/* Formatiert den Newsletter Einleitungstext. */
 .newsletter-text > p {
   margin: 1rem 0 1.5rem;
   line-height: 1.6;
   color: var(--color-text-muted);
 }
 
-/* Baut das Eingabefeld und den Absende-Button als gemeinsame Formularzeile. */
+/* Baut das Eingabefeld und den Absende Button als gemeinsame Formularzeile. */
 .newsletter-form {
   display: flex;
   max-width: 420px;
@@ -518,7 +518,7 @@
   border-color: var(--color-accent);
 }
 
-/* Passt das E-Mail-Eingabefeld an die Formularzeile an. */
+/* Passt das Mail Eingabefeld an die Formularzeile an. */
 .newsletter-form input {
   flex: 1;
   min-width: 0;
@@ -534,7 +534,7 @@
   outline: none;
 }
 
-/* Gestaltet den Newsletter-Absende-Button. */
+/* Gestaltet den Newsletter Absende Button. */
 .newsletter-form button {
   padding: 0 1.4rem;
   border: none;
@@ -550,31 +550,31 @@
   background: var(--color-accent);
 }
 
-/* Zeigt einen dezenten Hinweis unter dem Newsletter-Formular. */
+/* Zeigt einen dezenten Hinweis unter dem Newsletter Formular. */
 .newsletter-note {
   margin-top: 0.8rem;
   font-size: 0.8rem;
   color: var(--color-text-soft);
 }
 
-/* Unterstreicht den Link im Newsletter-Hinweis. */
+/* Unterstreicht den Link im Newsletter Hinweis. */
 .newsletter-note a {
   text-decoration: underline;
 }
 
-/* Begrenzt die Breite des Newsletter-Bilds. */
+/* Begrenzt die Breite des Newsletter Bilds. */
 .newsletter-image img {
   max-width: 460px;
 }
 
 /* ===== Über uns: Banner 1 (Hero) ===== */
 
-/* Gibt dem Team-Hero Abstand zur Navigation. */
+/* Gibt dem Team Hero Abstand zur Navigation. */
 .about-hero {
   padding-top: 5rem;
 }
 
-/* Skaliert die Hauptüberschrift des Team-Heros. */
+/* Skaliert die Hauptüberschrift des Team Heros. */
 .about-hero h1 {
   font-size: clamp(3rem, 7.5vw, 6rem);
   line-height: 0.98;
@@ -630,14 +630,14 @@
   transform: rotate(-10deg);
 }
 
-/* Formatiert die Hauptzeile im runden Team-Sticker. */
+/* Formatiert die Hauptzeile im runden Team Sticker. */
 .about-sticker span {
   font-family: var(--font-serif);
   font-size: 1.2rem;
   line-height: 1.15;
 }
 
-/* Setzt die kleine Zusatzzeile im Team-Sticker. */
+/* Setzt die kleine Zusatzzeile im Team Sticker. */
 .about-sticker small {
   margin-top: 0.4rem;
   font-size: 0.7rem;
@@ -678,7 +678,7 @@
 
 /* ===== Über uns: Banner 2 (Mission) ===== */
 
-/* Gibt dem Mission-Abschnitt Abstand und setzt seinen Start zurück. */
+/* Gibt dem Mission Abschnitt Abstand und setzt seinen Start zurück. */
 .mission {
   margin-top: 0;
   padding: 6rem 0;
@@ -732,7 +732,7 @@
   padding: 6.5rem 0;
 }
 
-/* Richtet Titel und ergänzende Team-Info am unteren Rand aus. */
+/* Richtet Titel und ergänzende Team Info am unteren Rand aus. */
 .team-head {
   display: flex;
   justify-content: space-between;
@@ -743,7 +743,7 @@
   border-bottom: 2px solid var(--color-primary);
 }
 
-/* Zeigt die ergänzende Team-Info dezenter an. */
+/* Zeigt die ergänzende Team Info dezenter an. */
 .team-head span {
   font-size: 0.85rem;
   color: var(--color-text-soft);
@@ -813,7 +813,7 @@
   margin-bottom: 3.75rem;
 }
 
-/* Ordnet die Zeitstrahl-Einträge in vier Spalten. */
+/* Ordnet die Zeitstrahl Einträge in vier Spalten. */
 .timeline-list {
   position: relative;
   list-style: none;
@@ -832,7 +832,7 @@
   background-color: var(--color-border-strong);
 }
 
-/* Positioniert einen Zeitschritt über der gemeinsamen Zeitstrahl-Linie. */
+/* Positioniert einen Zeitschritt über der gemeinsamen Zeitstrahl Linie. */
 .timeline-item {
   position: relative;
   padding-right: 1.5rem;
@@ -949,39 +949,39 @@
 
 /* ===== Funktionen: Banner 1 (Hero) ===== */
 
-/* Zentriert den Funktions-Hero und schneidet die Geräte unten ab. */
+/* Zentriert den Funktions Hero und schneidet die Geräte unten ab. */
 .features-hero {
   text-align: center;
   padding-top: 5rem;
   overflow: hidden; /* Handys unten abschneiden */
 }
 
-/* Setzt die Größe der Hauptüberschrift im Funktions-Hero. */
+/* Setzt die Größe der Hauptüberschrift im Funktions Hero. */
 .features-hero h1 {
   font-size: clamp(3rem, 7vw, 5.25rem);
   line-height: 0.98;
 }
 
-/* Begrenzt und zentriert den Einleitungstext im Funktions-Hero. */
+/* Begrenzt und zentriert den Einleitungstext im Funktions Hero. */
 .features-hero .lead {
   max-width: 520px;
   margin: 1.4rem auto 2rem;
 }
 
-/* Zentriert die Aktionslinks im Funktions-Hero. */
+/* Zentriert die Aktionslinks im Funktions Hero. */
 .features-hero .hero-actions {
   justify-content: center;
   gap: 1.75rem;
 }
 
-/* Reserviert Raum für die Gerätegrafiken im Telefon-Fächer. */
+/* Reserviert Raum für die Gerätegrafiken im Telefon Fächer. */
 .phone-fan {
   position: relative;
   height: 440px;
   margin-top: 4rem;
 }
 
-/* Positioniert die Gerätebilder innerhalb des Telefon-Fächers. */
+/* Positioniert die Gerätebilder innerhalb des Telefon Fächers. */
 .phone-fan img {
   position: absolute;
   width: 280px;
@@ -1023,7 +1023,7 @@
   background-color: var(--color-white);
 }
 
-/* Formatiert die Kapitel-Links als kompakte Navigationspunkte. */
+/* Formatiert die Kapitel Links als kompakte Navigationspunkte. */
 .chapter-nav a {
   font-size: 0.9rem;
   padding: 0.3rem 0;
@@ -1035,7 +1035,7 @@
   border-bottom-color: var(--color-accent);
 }
 
-/* ===== Funktionen: Banner 2–8 (Funktionsabschnitte) ===== */
+/* ===== Funktionen: Banner 2 bis 8 (Funktionsabschnitte) ===== */
 
 /* Gibt jedem Funktionsbanner Abstand und blendet überstehende Geräte aus. */
 .feature {
@@ -1116,7 +1116,7 @@
   transform: translateX(-50%);
 }
 
-/* Hintergrund-Varianten */
+/* Hintergrund Varianten */
 .feature-grey {
   background-color: var(--color-surface);
 }
@@ -1138,11 +1138,11 @@
 
 /* ===== Sicherheit: Grundlagen ===== */
 
-/* Eingebettete SVG-Symbole (Schloss, Auge, Pin …) */
+/* Eingebettete SVG Symbole (Schloss, Auge, Pin …) */
 .floating-card svg,
 .promise-icon svg,
-/* Setzt die Symbolgröße innerhalb eines Datenfluss-Schritts. */
-/* Setzt die Größe der Symbole in den Datenfluss-Schritten. */
+/* Setzt die Symbolgröße innerhalb eines Datenfluss Schritts. */
+/* Setzt die Größe der Symbole in den Datenfluss Schritten. */
 .flow-step svg {
   fill: none;
   stroke: currentColor;
@@ -1153,13 +1153,13 @@
 
 /* ===== Sicherheit: Banner 1 (Hero) ===== */
 
-/* Schneidet überstehende Inhalte des Sicherheits-Heros ab. */
+/* Schneidet überstehende Inhalte des Sicherheits Heros ab. */
 .security-hero {
   padding-top: 0rem;
   overflow: hidden; /* Handy unten abschneiden */
 }
 
-/* Ordnet Text und Gerätegrafik im Sicherheits-Hero zweispaltig an. */
+/* Ordnet Text und Gerätegrafik im Sicherheits Hero zweispaltig an. */
 .security-hero-inner {
   display: grid;
   grid-template-columns: 1.05fr 1fr;
@@ -1167,23 +1167,23 @@
   align-items: center;
 }
 
-/* Gibt dem Textbereich des Sicherheits-Heros unteren Raum. */
+/* Gibt dem Textbereich des Sicherheits Heros unteren Raum. */
 .security-hero-text {
   padding-bottom: 4rem;
 }
 
-/* Skaliert die Hauptüberschrift des Sicherheits-Heros. */
+/* Skaliert die Hauptüberschrift des Sicherheits Heros. */
 .security-hero h1 {
   font-size: clamp(3rem, 6vw, 4.4rem);
 }
 
-/* Begrenzt und positioniert den Einleitungstext im Sicherheits-Hero. */
+/* Begrenzt und positioniert den Einleitungstext im Sicherheits Hero. */
 .security-hero .lead {
   max-width: 480px;
   margin: 1.4rem 0 2rem;
 }
 
-/* Reserviert Höhe für die Gerätegrafik des Sicherheits-Heros. */
+/* Reserviert Höhe für die Gerätegrafik des Sicherheits Heros. */
 .security-hero-image {
   height: 560px;
 }
@@ -1235,7 +1235,7 @@
 
 /* ===== Sicherheit: Banner 2 (Drei Versprechen) ===== */
 
-/* Gestaltet die Fläche und Abstände des Versprechen-Banners. */
+/* Gestaltet die Fläche und Abstände des Versprechen Banners. */
 .promises-band {
   margin-top: 4rem;
   padding: 5.5rem 0;
@@ -1248,7 +1248,7 @@
   gap: 4rem;
 }
 
-/* Setzt Abstand über der Einleitung im Versprechen-Banner. */
+/* Setzt Abstand über der Einleitung im Versprechen Banner. */
 .promises-intro .lead {
   margin-top: 1rem;
 }
@@ -1277,7 +1277,7 @@
   border-bottom: none;
 }
 
-/* Zeichnet den Hintergrundbereich für das Versprechen-Symbol. */
+/* Zeichnet den Hintergrundbereich für das Versprechen Symbol. */
 .promise-icon {
   width: 48px;
   height: 48px;
@@ -1288,7 +1288,7 @@
   background-color: var(--color-white);
 }
 
-/* Legt die Größe der Versprechen-Symbole fest. */
+/* Legt die Größe der Versprechen Symbole fest. */
 .promise-icon svg {
   width: 24px;
   height: 24px;
@@ -1308,7 +1308,7 @@
   color: var(--color-text-muted);
 }
 
-/* ===== Sicherheit: Banner 3–5 (nutzen .feature von der Funktionen-Seite) ===== */
+/* ===== Sicherheit: Banner 3 bis 5 (nutzen .feature von der Funktionsseite) ===== */
 
 .feature-checks {
   list-style: none;
@@ -1340,7 +1340,7 @@
   text-align: center;
 }
 
-/* Begrenzt und zentriert die Einleitung über den Datenfluss-Schritten. */
+/* Begrenzt und zentriert die Einleitung über den Datenfluss Schritten. */
 .data-flow .lead {
   max-width: 560px;
   margin: 1rem auto 3rem;
@@ -1374,7 +1374,7 @@
   color: var(--color-accent);
 }
 
-/* Setzt die Größe der Symbole in den Datenfluss-Schritten. */
+/* Setzt die Größe der Symbole in den Datenfluss Schritten. */
 .flow-step svg {
   width: 30px;
   height: 30px;
@@ -1386,7 +1386,7 @@
   margin-top: 0.6rem;
 }
 
-/* Formatiert die Zusatzinformation eines Datenfluss-Schritts. */
+/* Formatiert die Zusatzinformation eines Datenfluss Schritts. */
 .flow-step span {
   display: block;
   margin-top: 0.2rem;
@@ -1418,12 +1418,12 @@
 
 /* ===== Sicherheit: Banner 7 (Häufige Fragen) ===== */
 
-/* Gibt dem FAQ-Bereich vertikalen Abstand. */
+/* Gibt dem FAQ Bereich vertikalen Abstand. */
 .faq {
   padding: 6rem 0;
 }
 
-/* Teilt den FAQ-Bereich in Überschrift und Fragenliste. */
+/* Teilt den FAQ Bereich in Überschrift und Fragenliste. */
 .faq-inner {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
@@ -1436,14 +1436,14 @@
   border-bottom: 1px solid var(--color-border-strong);
 }
 
-/* Entfernt den oberen Abstand bei der ersten FAQ-Frage. */
+/* Entfernt den oberen Abstand bei der ersten FAQ Frage. */
 .faq details:first-of-type {
   padding-top: 0;
 }
 
-/* Richtet Frage und Plus-Symbol in der Zeile aus. */
+/* Richtet Frage und Plus Symbol in der Zeile aus. */
 .faq summary {
-  list-style: none; /* Standard-Dreieck ausblenden */
+  list-style: none; /* Standard Dreieck ausblenden */
   display: flex;
   justify-content: space-between;
   gap: 1rem;
@@ -1452,12 +1452,12 @@
   cursor: pointer;
 }
 
-/* Blendet das native Dreieck des Details-Elements in WebKit aus. */
+/* Blendet das native Dreieck des Details Elements in WebKit aus. */
 .faq summary::-webkit-details-marker {
   display: none;
 }
 
-/* Zeichnet das Plus-Symbol zum Öffnen einer FAQ-Frage. */
+/* Zeichnet das Plus Symbol zum Öffnen einer FAQ Frage. */
 .faq summary::after {
   content: "+";
   font-size: 1.5rem;
@@ -1468,10 +1468,10 @@
 
 /* Tauscht das Plus beim Öffnen gegen ein Minus aus. */
 .faq details[open] summary::after {
-  content: "–";
+  content: "×";
 }
 
-/* Begrenzt und formatiert die Antwort einer FAQ-Frage. */
+/* Begrenzt und formatiert die Antwort einer FAQ Frage. */
 .faq details p {
   max-width: 520px;
   margin-top: 0.6rem;
@@ -1482,13 +1482,13 @@
 
 /* ===== Jetzt starten: Banner 1 (Download) ===== */
 
-/* Schneidet den Download-Hero an seinen Außenkanten ab. */
+/* Schneidet den Download Hero an seinen Außenkanten ab. */
 .start-hero {
   padding-top: 1.375rem;
   overflow: hidden; /* Handy unten abschneiden */
 }
 
-/* Ordnet Text und Gerätebild im Download-Hero in zwei Spalten an. */
+/* Ordnet Text und Gerätebild im Download Hero in zwei Spalten an. */
 .start-hero-inner {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
@@ -1496,18 +1496,18 @@
   align-items: center;
 }
 
-/* Setzt Abstand unter den Text im Download-Hero. */
+/* Setzt Abstand unter den Text im Download Hero. */
 .start-hero-text {
   padding-bottom: 4.5rem;
 }
 
-/* Skaliert die Download-Hero-Überschrift responsiv. */
+/* Skaliert die Download Hero Überschrift responsiv. */
 .start-hero h1 {
   font-size: clamp(3rem, 6.5vw, 5.25rem);
   line-height: 0.98;
 }
 
-/* Hebt den betonten Teil der Download-Überschrift hervor. */
+/* Hebt den betonten Teil der Download Überschrift hervor. */
 .start-hero h1 em {
   color: var(--color-accent);
 }
@@ -1518,26 +1518,26 @@
   margin: 1.4rem 0 2rem;
 }
 
-/* Zeigt einen dezenten Hinweis unter den Download-Aktionen. */
+/* Zeigt einen dezenten Hinweis unter den Download Aktionen. */
 .start-note {
   margin-top: 1rem;
   font-size: 0.8rem;
   color: var(--color-text-soft);
 }
 
-/* Reserviert Höhe für die Gerätegrafik im Download-Hero. */
+/* Reserviert Höhe für die Gerätegrafik im Download Hero. */
 .start-hero-image {
   height: 560px;
 }
 
-/* App-Store- und Google-Play-Buttons */
+/* App Store  und Google Play Buttons */
 .store-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
 }
 
-/* Gestaltet einen Store-Download-Button mit Icon und Text. */
+/* Gestaltet einen Store Download Button mit Icon und Text. */
 .store-button {
   display: flex;
   align-items: center;
@@ -1550,18 +1550,18 @@
   font-weight: 600;
 }
 
-/* Ändert die Store-Buttonfarbe beim Darüberfahren. */
+/* Ändert die Store Buttonfarbe beim Darüberfahren. */
 .store-button:hover {
   background-color: var(--color-primary);
 }
 
-/* Legt die Größe des Store-Logos im Button fest. */
+/* Legt die Größe des Store Logos im Button fest. */
 .store-button img {
   width: 26px;
   height: 26px;
 }
 
-/* Setzt den kleinen Zusatztext im Store-Button. */
+/* Setzt den kleinen Zusatztext im Store Button. */
 .store-button small {
   display: block;
   font-size: 0.7rem;
@@ -1574,28 +1574,28 @@
   justify-content: center;
 }
 
-/* Zeichnet Store-Buttons für dunkle Hintergründe hell. */
+/* Zeichnet Store Buttons für dunkle Hintergründe hell. */
 .store-buttons-light .store-button {
   background-color: var(--color-white);
   color: var(--color-dark);
 }
 
-/* Hebt helle Store-Buttons beim Darüberfahren leicht ab. */
+/* Hebt helle Store Buttons beim Darüberfahren leicht ab. */
 .store-buttons-light .store-button:hover {
   background-color: var(--color-accent-bg);
 }
 
-/* Invertiert das Store-Logo für die helle Button-Variante. */
+/* Invertiert das Store Logo für die helle Button Variante. */
 .store-buttons-light .store-button img {
   filter: invert(1); /* weißes Logo schwarz färben */
 }
 
-/* Passt den Zusatztext an den hellen Store-Button an. */
+/* Passt den Zusatztext an den hellen Store Button an. */
 .store-buttons-light .store-button small {
   color: var(--color-text-soft);
 }
 
-/* QR-Code-Karte neben dem Handy */
+/* QR Code Karte neben dem Handy */
 .qr-card {
   position: absolute;
   left: 0;
@@ -1610,14 +1610,14 @@
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08);
 }
 
-/* überschreibt .feature-image img (Handy-Position) */
+/* überschreibt .feature-image img (Handy Position) */
 .feature-image .qr-card img {
   position: static;
   width: 100%;
   transform: none;
 }
 
-/* Formatiert die Beschriftung unter dem QR-Code. */
+/* Formatiert die Beschriftung unter dem QR Code. */
 .qr-card span {
   display: block;
   margin-top: 0.5rem;
@@ -1627,13 +1627,13 @@
 
 /* ===== Jetzt starten: Banner 2 (Pläne) ===== */
 
-/* Gibt der Tarifübersicht Abstand und entfernt den Standard-Außenabstand. */
+/* Gibt der Tarifübersicht Abstand und entfernt den Standard Außenabstand. */
 .plans {
   margin-top: 0;
   padding: 6rem 0;
 }
 
-/* Radio-Buttons unsichtbar, aber per Tastatur bedienbar */
+/* Radio Buttons unsichtbar, aber per Tastatur bedienbar */
 .billing-radio {
   position: absolute;
   opacity: 0;
@@ -1658,7 +1658,7 @@
   background-color: var(--color-white);
 }
 
-/* Macht jede Beschriftung des Tarif-Umschalters anklickbar. */
+/* Macht jede Beschriftung des Tarif Umschalters anklickbar. */
 .billing-switch label {
   padding: 0.5rem 1rem;
   border-radius: 999px;
@@ -1686,7 +1686,7 @@
   color: var(--color-accent-light);
 }
 
-/* Tastatur-Fokus sichtbar machen */
+/* Tastatur Fokus sichtbar machen */
 #billing-monthly:focus-visible ~ .plans-head label[for="billing-monthly"],
 #billing-yearly:focus-visible ~ .plans-head label[for="billing-yearly"] {
   outline: 2px solid var(--color-focus-ring);
@@ -1698,7 +1698,7 @@
   content: "✓" / " ";
 }
 
-/* Monats- oder Jahrespreis zeigen */
+/* Monats  oder Jahrespreis zeigen */
 .price-yearly {
   display: none;
 }
@@ -1749,7 +1749,7 @@
   letter-spacing: -0.02em;
 }
 
-/* Formatiert die kleinere Währungs- oder Intervallangabe am Preis. */
+/* Formatiert die kleinere Währungs  oder Intervallangabe am Preis. */
 .plan-price small {
   font-family: var(--font-sans);
   font-size: 0.95rem;
@@ -1803,7 +1803,7 @@
   border: 1.5px solid var(--color-primary);
 }
 
-/* Färbt den Text des Outline-Buttons beim Hover weiß. */
+/* Färbt den Text des Outline Buttons beim Hover weiß. */
 .btn-outline:hover {
   color: var(--color-white);
 }
@@ -1826,7 +1826,7 @@
   border-top-color: var(--color-dark-accent);
 }
 
-/* Hellt die Leistungs-Häkchen im hervorgehobenen Tarif auf. */
+/* Hellt die Leistungs Häkchen im hervorgehobenen Tarif auf. */
 .plan-highlight .plan-list li::before {
   color: var(--color-accent-light);
 }
@@ -1961,7 +1961,7 @@
 
 /* ===== Jetzt starten: Banner 4 (Fragen, nutzt .faq von Sicherheit) ===== */
 
-/* Färbt die FAQ-Variante der Download-Seite grau. */
+/* Färbt die FAQ Variante der Download Seite grau. */
 .faq-grey {
   background-color: var(--color-surface);
 }
@@ -2048,20 +2048,20 @@
   font-size: 1.25rem;
 }
 
-/* Ordnet die Footer-Links mit gleichmäßigem Abstand an. */
+/* Ordnet die Footer Links mit gleichmäßigem Abstand an. */
 .footer-nav {
   display: flex;
   gap: 1.5rem;
 }
 
-/* Zeigt Footer-Links und Copyright-Hinweis in zurückhaltender Farbe. */
+/* Zeigt Footer Links und Copyright Hinweis in zurückhaltender Farbe. */
 .footer-nav a,
 .footer-copy {
   font-size: 0.8rem;
   color: var(--color-footer-text);
 }
 
-/* Hellt einen Footer-Link beim Darüberfahren auf. */
+/* Hellt einen Footer Link beim Darüberfahren auf. */
 .footer-nav a:hover {
   color: var(--color-white);
 }

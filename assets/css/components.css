@@ -15,7 +15,7 @@ h2:focus-visible {
   outline-offset: 4px;
 }
 
-/* Abschnitts-Überschriften (Startseite, Sicherheit, Über uns, Jetzt starten) */
+/* Abschnitts Überschriften (Startseite, Sicherheit, Über uns, Jetzt starten) */
 .problems-intro h2,
 .features-text h2,
 .newsletter-text h2,
@@ -139,7 +139,7 @@ h2:focus-visible {
   outline-offset: 3px;
 }
 
-/* Nur für Screenreader sichtbar (z. B. Label des E-Mail-Felds) */
+/* Nur für Screenreader sichtbar (z. B. Label des Mail Felds) */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -149,7 +149,7 @@ h2:focus-visible {
   white-space: nowrap;
 }
 
-/* ===== DHBW-Hinweisleiste ===== */
+/* ===== DHBW Hinweisleiste ===== */
 
 .project-bar {
   background-color: var(--color-dhbw);
