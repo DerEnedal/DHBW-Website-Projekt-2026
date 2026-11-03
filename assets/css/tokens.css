@@ -35,6 +35,6 @@
   --color-dhbw-soft: var(--color-white); /* nocht direkt ändern wegen darkmode */
 
   /* Schriften */
-  --font-sans: IBM Plex Sans; /* funktional, modern, kompetent auch aber nahbar und einladend */
-  --font-serif: Source Serif 4; /* seriös, vertrauenswürdig, akademisch, aber auch nahbar */
+  --font-sans: OpenSans, sans-serif; /* funktional, modern, kompetent auch aber nahbar und einladend */
+  --font-serif: Source Serif 4, serif; /* seriös, vertrauenswürdig, akademisch, aber auch nahbar */
 }
