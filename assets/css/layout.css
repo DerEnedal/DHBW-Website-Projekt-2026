@@ -568,23 +568,23 @@
 
 /* ===== Über uns: Banner 1 (Hero) ===== */
 
-/* Gibt dem Team Hero Abstand zur Navigation. */
+/* Gibt dem Team Hero Abstand zur Navigation */
 .about-hero {
   padding-top: 5rem;
 }
 
-/* Skaliert die Hauptüberschrift des Team Heros. */
+/* Skaliert die Hauptüberschrift des Team Heros */
 .about-hero h1 {
   font-size: clamp(3rem, 7.5vw, 6rem);
   line-height: 0.98;
 }
 
-/* Hebt den hervorgehobenen Teil der Überschrift farblich ab. */
+/* Hebt den hervorgehobenen Teil der Überschrift ab */
 .about-hero h1 em {
   color: var(--color-accent);
 }
 
-/* Legt Seitenverhältnis und Platzhalterdarstellung des Teamfotos fest. */
+/* Seitenverhältnis und Platzhalterdarstellung des Teamfotos */
 .about-photo {
   position: relative;
   display: flex;
@@ -600,7 +600,7 @@
   color: var(--color-text-soft);
 }
 
-/* Teamfoto füllt die Fläche, Köpfe bleiben sichtbar */
+/* Teamfoto füllt Fläche, Köpfe bleiben sichtbar */
 .about-photo img {
   position: absolute;
   inset: 0;
@@ -629,14 +629,14 @@
   transform: rotate(-10deg);
 }
 
-/* Formatiert die Hauptzeile im runden Team Sticker. */
+/* Formatiert die Hauptzeile runden Team Sticker */
 .about-sticker span {
   font-family: var(--font-serif);
   font-size: 1.2rem;
   line-height: 1.15;
 }
 
-/* Setzt die kleine Zusatzzeile im Team Sticker. */
+/* Setzt die kleine Zusatzzeile im Team Sticker */
 .about-sticker small {
   margin-top: 0.4rem;
   font-size: 0.7rem;
@@ -645,12 +645,12 @@
   color: var(--color-accent-light);
 }
 
-/* Färbt das Datum im Sticker passend zum Akzent. */
+/* Färbt das Datum im Sticker passend Akzent */
 .about-sticker .about-sticker-date {
   color: #7FD8A6;
 }
 
-/* Stellt Geschichte und Fakten in zwei Spalten dar. */
+/* Stellt Geschichte und Fakten zwei Spalten */
 .about-story {
   display: grid;
   grid-template-columns: 1.6fr 0.7fr;
@@ -658,14 +658,14 @@
   padding: 4.5rem 0 5.5rem;
 }
 
-/* Formatiert den längeren Missionstext. */
+/* Formatiert den längeren Missionstext */
 .about-story p {
   font-size: 1.25rem;
   line-height: 1.65;
   color: var(--color-text-muted);
 }
 
-/* Gestaltet die Fakten als abgesetzte vertikale Liste. */
+/* Gestaltet Fakten als abgesetzte vertikale Liste */
 .about-facts {
   list-style: none;
   border-left: 1px solid var(--color-border);
@@ -677,13 +677,13 @@
 
 /* ===== Über uns: Banner 2 (Mission) ===== */
 
-/* Gibt dem Mission Abschnitt Abstand und setzt seinen Start zurück. */
+/* Gibt dem Mission Abschnitt Abstand und setzt seinen Start zurück */
 .mission {
   margin-top: 0;
   padding: 6rem 0;
 }
 
-/* Begrenzt die Breite und Größe der Missionsüberschrift. */
+/* Begrenzt die Breite und Größe Missionsüberschrift */
 .mission h2 {
   max-width: 1000px;
   font-size: clamp(2.25rem, 4.5vw, 3.6rem);
@@ -696,7 +696,7 @@
   background: linear-gradient(transparent 62%, #cfe9dc 62%);
 }
 
-/* Ordnet die drei Missionswerte in gleich breite Spalten. */
+/* Ordnet drei Missionswerte in gleich breite Spalten */
 .mission-values {
   list-style: none;
   display: grid;
@@ -705,18 +705,18 @@
   border-top: 1px solid var(--color-border-strong);
 }
 
-/* Setzt Innenabstand für jeden Missionswert. */
+/* Setzt Innenabstand für jeden Missionswert */
 .mission-values li {
   padding: 1.6rem 1.9rem 0 0;
 }
 
-/* Trennt weitere Missionswerte mit Linie und zusätzlichem Innenabstand. */
+/* Trennt Missionswerte mit Linie und zusätzlichem Innenabstand */
 .mission-values li + li {
   padding-left: 1.9rem;
   border-left: 1px solid var(--color-border-strong);
 }
 
-/* Formatiert die erklärenden Texte der Missionswerte. */
+/* Formatiert die erklärenden Texte der Missionswerte */
 .mission-values p {
   margin-top: 0.4rem;
   font-size: 0.95rem;
@@ -726,12 +726,12 @@
 
 /* ===== Über uns: Banner 3 (Team) ===== */
 
-/* Gibt der Teamübersicht großzügigen vertikalen Abstand. */
+/* Gibt Teamübersicht großzügigen vertikalen Abstand */
 .team {
   padding: 6.5rem 0;
 }
 
-/* Richtet Titel und ergänzende Team Info am unteren Rand aus. */
+/*  Titel und ergänzende Team Info unteren Rand */
 .team-head {
   display: flex;
   justify-content: space-between;
@@ -742,13 +742,13 @@
   border-bottom: 2px solid var(--color-primary);
 }
 
-/* Zeigt die ergänzende Team Info dezenter an. */
+/* ergänzende Team Info dezenter  */
 .team-head span {
   font-size: 0.85rem;
   color: var(--color-text-soft);
 }
 
-/* Ordnet die Teammitglieder in vier Spalten. */
+/* Ordnet die Teammitglieder in vier Spalten */
 .team-grid {
   list-style: none;
   display: grid;
@@ -756,7 +756,7 @@
   gap: 1.5rem;
 }
 
-/* Legt Seitenverhältnis und Platzhalterstil des Mitgliederfotos fest. */
+/* Seitenverhältnis und Platzhalterstil der Mitgliederfotos */
 .member-photo {
   display: grid;
   place-items: center;
@@ -767,7 +767,7 @@
   font-size: 0.85rem;
 }
 
-/* Füllt den Fotobereich mit dem Bild des Mitglieds. */
+/* Füllt den Fotobereich mit Bild des Mitglieds */
 .member-photo img {
   width: 100%;
   height: 100%;
@@ -782,7 +782,7 @@
   font-size: 1.05rem;
 }
 
-/* Hebt die Rolle des Teammitglieds farblich hervor. */
+/* Hebt Rolle des Teammitglieds farblich hervor */
 .member-role {
   margin-top: 0.15rem;
   font-size: 0.8rem;
@@ -790,7 +790,7 @@
   color: var(--color-accent);
 }
 
-/* Stellt das persönliche Zitat in einer Serifenschrift dar. */
+/* Stellt persönliche Zitat in Serifenschrift dar */
 .member-quote {
   margin-top: 0.6rem;
   font-family: var(--font-serif);
@@ -801,18 +801,18 @@
 
 /* ===== Über uns: Banner 4 (Zeitleiste) ===== */
 
-/* Setzt vertikalen Abstand für den Zeitstrahl. */
+/* Setzt vertikalen Abstand für den Zeitstrahl */
 .timeline {
   margin-top: 0;
   padding: 6.5rem 0;
 }
 
-/* Trennt die Überschrift vom Zeitstrahl. */
+/* Trennt die Überschrift vom Zeitstrahl */
 .timeline h2 {
   margin-bottom: 3.75rem;
 }
 
-/* Ordnet die Zeitstrahl Einträge in vier Spalten. */
+/* Ordnet die Zeitstrahl Einträge vier Spalten */
 .timeline-list {
   position: relative;
   list-style: none;
@@ -831,13 +831,13 @@
   background-color: var(--color-border-strong);
 }
 
-/* Positioniert einen Zeitschritt über der gemeinsamen Zeitstrahl Linie. */
+/* Positioniert Zeitschritt über gemeinsamen Zeitstrahl Linie */
 .timeline-item {
   position: relative;
   padding-right: 1.5rem;
 }
 
-/* Zeichnet den Punkt für einen Zeitschritt. */
+/* Zeichnet den Punkt für Zeitschritt */
 .timeline-dot {
   position: relative;
   z-index: 1;
@@ -856,14 +856,14 @@
   box-shadow: 0 0 0 6px var(--color-accent-bg);
 }
 
-/* Zeigt das Datum eines Zeitschritts dezent oberhalb des Titels. */
+/* Zeigt Datum Zeitschritts dezent oberhalb des Titel */
 .timeline-date {
   margin-top: 1.4rem;
   font-size: 0.8rem;
   color: var(--color-text-soft);
 }
 
-/* Gestaltet die Überschrift jedes Zeitschritts. */
+/* Gestaltet Überschrift jedes Zeitschritts */
 .timeline-item h3 {
   margin: 0.4rem 0 0.5rem;
   font-family: var(--font-serif);
@@ -871,7 +871,7 @@
   font-weight: 500;
 }
 
-/* Formatiert die Beschreibung am Ende jedes Zeitschritts. */
+/* Formatiert die Beschreibung jedes Zeitschritts */
 .timeline-item p:last-child {
   font-size: 0.9rem;
   line-height: 1.55;
@@ -880,12 +880,12 @@
 
 /* ===== Über uns: Banner 5 (Partner) ===== */
 
-/* Gibt dem Partnerbereich vertikalen Abstand. */
+/* Gibt Partnerbereich vertikalen Abstand */
 .partner {
   padding: 6.5rem 0;
 }
 
-/* Stellt Partnertext und Partnerkarte nebeneinander. */
+/* Partnertext und Partnerkarte nebeneinander */
 .partner-inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -893,12 +893,12 @@
   align-items: center;
 }
 
-/* Setzt Abstand für den Einleitungstext im Partnerbereich. */
+/* Abstand für Einleitungstext im Partnerbereich */
 .partner .lead {
   margin: 1.1rem 0 1.75rem;
 }
 
-/* Ordnet Logo und Partnerdetails in einer gemeinsamen Karte an. */
+/* Logo und Partnerdetails in gemeinsame Karte */
 .partner-card {
   display: flex;
   align-items: center;
@@ -909,7 +909,7 @@
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
 }
 
-/* Formt das Partnerbild als runden, nicht schrumpfenden Kreis. */
+/* Formt Partnerbild als runden nicht schrumpfenden Kreis */
 .partner-card img {
   width: 130px;
   height: 130px;
@@ -918,20 +918,20 @@
   object-fit: cover;
 }
 
-/* Setzt den Partnernamen als eigene Zeile. */
+/* Setzt Partnernamen als eigene Zeile */
 .partner-card strong {
   display: block;
   font-size: 1.35rem;
 }
 
-/* Formatiert die Rollenbeschreibung des Partners. */
+/* Formatiert Rollenbeschreibung des Partners */
 .partner-role {
   margin: 0.25rem 0 0.75rem;
   font-size: 0.9rem;
   color: var(--color-text-soft);
 }
 
-/* Stellt das Partnerzitat kursiv in der Serifenschrift dar. */
+/* Stellt Partnerzitat kursiv in Serifenschrift dar */
 .partner-quote {
   font-family: var(--font-serif);
   font-style: italic;
@@ -941,53 +941,53 @@
 
 /* ===== Funktionen: Grundlagen ===== */
 
-/* Entfernt Innenabstände, damit Funktionsbanner randlos beginnen. */
+/* Entfernt Innenabstände Funktionsbanner randlos */
 .main.main-features {
   padding: 0; /* Abschnitte gehen bis an den Rand */
 }
 
 /* ===== Funktionen: Banner 1 (Hero) ===== */
 
-/* Zentriert den Funktions Hero und schneidet die Geräte unten ab. */
+/* Zentriert Funktions Hero, schneidet Geräte unten ab */
 .features-hero {
   text-align: center;
   padding-top: 5rem;
   overflow: hidden; /* Handys unten abschneiden */
 }
 
-/* Setzt die Größe der Hauptüberschrift im Funktions Hero. */
+/* Setzt die Größe der Hauptüberschrift im Funktions Hero */
 .features-hero h1 {
   font-size: clamp(3rem, 7vw, 5.25rem);
   line-height: 0.98;
 }
 
-/* Begrenzt und zentriert den Einleitungstext im Funktions Hero. */
+/* Begrenzt und zentriert Einleitungstext Funktions Hero */
 .features-hero .lead {
   max-width: 520px;
   margin: 1.4rem auto 2rem;
 }
 
-/* Zentriert die Aktionslinks im Funktions Hero. */
+/* Zentriert Aktionslinks im Funktions Hero */
 .features-hero .hero-actions {
   justify-content: center;
   gap: 1.75rem;
 }
 
-/* Reserviert Raum für die Gerätegrafiken im Telefon Fächer. */
+/* Reserviert Raum für Gerätegrafiken im Telefon Fächer */
 .phone-fan {
   position: relative;
   height: 440px;
   margin-top: 4rem;
 }
 
-/* Positioniert die Gerätebilder innerhalb des Telefon Fächers. */
+/* Positioniert Gerätebilder innerhalb Telefon Fächers */
 .phone-fan img {
   position: absolute;
   width: 280px;
   height: auto;
 }
 
-/* Hebt das mittlere Gerät hervor und zentriert es. */
+/* Hebt das mittlere Gerät hervor, zentriert es */
 .phone-fan-center {
   left: 50%;
   top: 0;
@@ -996,14 +996,14 @@
   z-index: 2;
 }
 
-/* Platziert und neigt das linke Gerät im Fächer. */
+/* Platziert und neigt das linke Gerät im Fächer */
 .phone-fan-left {
   left: calc(50% - 380px);
   top: 50px;
   transform: rotate(-7deg);
 }
 
-/* Platziert und neigt das rechte Gerät im Fächer. */
+/* Platziert und neigt das rechte Gerät im Fächer */
 .phone-fan-right {
   left: calc(50% + 100px);
   top: 50px;
@@ -1022,28 +1022,28 @@
   background-color: var(--color-white);
 }
 
-/* Formatiert die Kapitel Links als kompakte Navigationspunkte. */
+/* Formatiert Kapitel Links als kompakte Navigationspunkte */
 .chapter-nav a {
   font-size: 0.9rem;
   padding: 0.3rem 0;
   border-bottom: 2px solid transparent;
 }
 
-/* Markiert den Navigationslink beim Darüberfahren. */
+/* Markiert Navigationslink beim Darüberfahren */
 .chapter-nav a:hover {
   border-bottom-color: var(--color-accent);
 }
 
 /* ===== Funktionen: Banner 2 bis 8 (Funktionsabschnitte) ===== */
 
-/* Gibt jedem Funktionsbanner Abstand und blendet überstehende Geräte aus. */
+/* Gibt jedem Funktionsbanner Abstand, blendet überstehende Geräte asu */
 .feature {
   padding-top: 6rem;
   overflow: hidden; /* Handy unten abschneiden */
   background-color: var(--color-white);
 }
 
-/* Ordnet Text und Gerät in zwei gleich breiten Spalten an. */
+/* Text und Gerät zwei gleich breite Spalten */
 .feature-inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1056,13 +1056,13 @@
   order: 2;
 }
 
-/* Skaliert die Überschrift in einem Funktionsbanner. */
+/* Skaliert Überschrift in Funktionsbanner */
 .feature h2 {
   font-size: clamp(2.5rem, 5vw, 3.5rem);
   line-height: 1.02;
 }
 
-/* Zeigt Tastaturfokus an Überschriften der Funktionsseite deutlich an. */
+/* Zeigt Tastaturfokus Überschriften der Funktionsseite deutlich an */
 .features-hero h1:focus-visible,
 .feature h2:focus-visible,
 .features-cta h2:focus-visible {
@@ -1070,13 +1070,13 @@
   outline-offset: 6px;
 }
 
-/* Begrenzt den Einleitungstext innerhalb eines Funktionsbanners. */
+/* Begrenzt Einleitungstext innerhalb Funktionsbanners */
 .feature .lead {
   max-width: 430px;
   margin: 1.25rem 0 1.6rem;
 }
 
-/* Ordnet Kennzahlen nebeneinander und trennt sie mit einer Linie ab. */
+/* Ordnet Kennzahlen nebeneinander und trennt sie mit einer Linie ab */
 .feature-facts {
   list-style: none;
   display: flex;
@@ -1086,13 +1086,13 @@
   border-top: 1px solid var(--color-border);
 }
 
-/* Reserviert den Positionierungsbereich für das Gerätebild. */
+/* Reserviert Positionierungsbereich für Gerätebild */
 .feature-image {
   position: relative;
   height: 520px;
 }
 
-/* Grüner Kreis hinter dem Handy */
+/* Grüner Kreis hinter Handy */
 .feature-image::before {
   content: "";
   position: absolute;
@@ -1105,7 +1105,7 @@
   transform: translateX(-50%);
 }
 
-/* Zentriert das Gerätebild im reservierten Bildbereich. */
+/* Zentriert Gerätebild im reservierten Bildbereich */
 .feature-image img {
   position: absolute;
   left: 50%;
@@ -1122,13 +1122,13 @@
 
 /* ===== Funktionen: Banner 9 (Abschluss) ===== */
 
-/* Zentriert den Abschlussaufruf und gibt ihm großzügigen Abstand. */
+/* Zentriert Abschlussaufruf und gibt Abstand */
 .features-cta {
   text-align: center;
   padding: 7rem 0;
 }
 
-/* Skaliert die Überschrift des Funktionsabschlusses. */
+/* Skaliert Überschrift Funktionsabschluss */
 .features-cta h2 {
   font-size: clamp(2.5rem, 5vw, 4rem);
   line-height: 1.02;
@@ -1140,8 +1140,7 @@
 /* Eingebettete SVG Symbole (Schloss, Auge, Pin …) */
 .floating-card svg,
 .promise-icon svg,
-/* Setzt die Symbolgröße innerhalb eines Datenfluss Schritts. */
-/* Setzt die Größe der Symbole in den Datenfluss Schritten. */
+
 .flow-step svg {
   fill: none;
   stroke: currentColor;
@@ -1152,13 +1151,13 @@
 
 /* ===== Sicherheit: Banner 1 (Hero) ===== */
 
-/* Schneidet überstehende Inhalte des Sicherheits Heros ab. */
+/* Schneidet überstehende Inhalte ab */
 .security-hero {
   padding-top: 0rem;
   overflow: hidden; /* Handy unten abschneiden */
 }
 
-/* Ordnet Text und Gerätegrafik im Sicherheits Hero zweispaltig an. */
+/* Ordnet Text und Gerätegrafik Sicherheits Hero zweispaltig */
 .security-hero-inner {
   display: grid;
   grid-template-columns: 1.05fr 1fr;
@@ -1166,23 +1165,23 @@
   align-items: center;
 }
 
-/* Gibt dem Textbereich des Sicherheits Heros unteren Raum. */
+/* Gibt Textbereich des Sicherheits Heros unteren Raum */
 .security-hero-text {
   padding-bottom: 4rem;
 }
 
-/* Skaliert die Hauptüberschrift des Sicherheits Heros. */
+/* Skaliert Hauptüberschrift Sicherheits Heros */
 .security-hero h1 {
   font-size: clamp(3rem, 6vw, 4.4rem);
 }
 
-/* Begrenzt und positioniert den Einleitungstext im Sicherheits Hero. */
+/* Begrenzt und positioniert Einleitungstext */
 .security-hero .lead {
   max-width: 480px;
   margin: 1.4rem 0 2rem;
 }
 
-/* Reserviert Höhe für die Gerätegrafik des Sicherheits Heros. */
+/* Reserviert Höhe für Gerätegrafik Sicherheits Hero */
 .security-hero-image {
   height: 560px;
 }
@@ -1201,32 +1200,32 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* Setzt Größe und Akzentfarbe der Symbole in den schwebenden Karten. */
+/* Setzt Größe, Akzentfarbe Symbole in schwebenden Karten */
 .floating-card svg {
   width: 20px;
   height: 20px;
   color: var(--color-accent);
 }
 
-/* Formatiert die erklärende Zeile der schwebenden Karte. */
+/* Foratiert erklärende Zeile und schwebenden Karte */
 .floating-card span {
   display: block;
   font-size: 0.75rem;
   color: var(--color-text-soft);
 }
 
-/* Hebt den Wert in der schwebenden Karte hervor. */
+/* Hebt Wert in schwebende Karte hervor */
 .floating-card strong {
   font-size: 0.9rem;
 }
 
-/* Platziert die erste schwebende Karte links neben dem Handy. */
+/* Platziert erste schwebende Karte links */
 .floating-card-left {
   left: 0;
   top: 180px;
 }
 
-/* Platziert die zweite schwebende Karte rechts neben dem Handy. */
+/* Platziert die zweite schwebende Karte rechts*/
 .floating-card-right {
   right: -10px;
   top: 400px;
@@ -1234,30 +1233,30 @@
 
 /* ===== Sicherheit: Banner 2 (Drei Versprechen) ===== */
 
-/* Gestaltet die Fläche und Abstände des Versprechen Banners. */
+/* Gestaltet Fläche und Abstände Versprechen Banner */
 .promises-band {
   margin-top: 4rem;
   padding: 5.5rem 0;
 }
 
-/* Teilt das Banner in Einleitung und Versprechenliste. */
+/* Teilt Banner in Einleitung und Versprechenliste */
 .promises {
   display: grid;
   grid-template-columns: 0.85fr 1.15fr;
   gap: 4rem;
 }
 
-/* Setzt Abstand über der Einleitung im Versprechen Banner. */
+/* Setzt Abstand über Einleitung im Versprechen Banner */
 .promises-intro .lead {
   margin-top: 1rem;
 }
 
-/* Entfernt Aufzählungszeichen aus der Versprechenliste. */
+/* Entfernt Aufzählungszeichen aus Versprechenliste */
 .promises-list {
   list-style: none;
 }
 
-/* Ordnet Symbol und Versprechenstext an und trennt die Einträge. */
+/* Ordnet Symbol und Versprechenstext an, trennt Einträge */
 .promise {
   display: flex;
   align-items: flex-start;
@@ -1266,17 +1265,17 @@
   border-bottom: 1px solid var(--color-border-strong);
 }
 
-/* Entfernt den oberen Abstand beim ersten Versprechen. */
+/* Entfernt oberen Abstand bei ersten Versprechen */
 .promise:first-child {
   padding-top: 0;
 }
 
-/* Entfernt die Trennlinie unter dem letzten Versprechen. */
+/* Entfernt Trennlinie unter dem letzten Versprechen */
 .promise:last-child {
   border-bottom: none;
 }
 
-/* Zeichnet den Hintergrundbereich für das Versprechen Symbol. */
+/* Zeichnet Hintergrundbereich für Versprechen Symbol */
 .promise-icon {
   width: 48px;
   height: 48px;
@@ -1287,19 +1286,19 @@
   background-color: var(--color-white);
 }
 
-/* Legt die Größe der Versprechen Symbole fest. */
+/* Legt Größe Versprechen Symbole fest */
 .promise-icon svg {
   width: 24px;
   height: 24px;
 }
 
-/* Hebt die Titel der Versprechen hervor. */
+/* Hebt Titel Versprechen hervor */
 .promise h3 {
   font-size: 1.1rem;
   font-weight: 600;
 }
 
-/* Formatiert die Beschreibungstexte der Versprechen. */
+/* Formatiert Beschreibungstexte Versprechen */
 .promise p {
   margin-top: 0.3rem;
   font-size: 0.95rem;
@@ -1316,14 +1315,14 @@
   border-top: 1px solid var(--color-border);
 }
 
-/* Ordnet jeden Sicherheitsvorteil in einer eigenen Zeile an. */
+/* Ordnet jeden Sicherheitsvorteil in eigenen Zeile an */
 .feature-checks li {
   display: flex;
   gap: 0.6rem;
   padding: 0.35rem 0;
 }
 
-/* Setzt ein grünes Häkchen vor jeden Sicherheitsvorteil. */
+/* Setzt grünes Häkchen vor jeden Sicherheitsvorteil */
 .feature-checks li::before {
   content: "✓";
   font-weight: 700;
@@ -1332,20 +1331,20 @@
 
 /* ===== Sicherheit: Banner 6 (So funktioniert's) ===== */
 
-/* Zentriert den Datenfluss und gibt dem Abschnitt vertikalen Abstand. */
+/* Zentriert den Datenfluss und gibt dem Abschnitt vertikalen Abstand */
 .data-flow {
   margin-top: 0;
   padding: 6rem 0;
   text-align: center;
 }
 
-/* Begrenzt und zentriert die Einleitung über den Datenfluss Schritten. */
+/* Begrenzt und zentriert die Einleitung über den Datenfluss Schritten */
 .data-flow .lead {
   max-width: 560px;
   margin: 1rem auto 3rem;
 }
 
-/* Ordnet die vier Schritte des Datenflusses in einer Reihe an. */
+/* Schritte des Datenflusses in einer Reihe */
 .flow-steps {
   list-style: none;
   display: grid;
@@ -1353,7 +1352,7 @@
   gap: 2.5rem;
 }
 
-/* Gestaltet einen einzelnen Schritt als kompakte Karte. */
+/* einzelnen Schritt kompakte Karte*/
 .flow-step {
   position: relative;
   padding: 1.5rem 1rem;
@@ -1373,19 +1372,19 @@
   color: var(--color-accent);
 }
 
-/* Setzt die Größe der Symbole in den Datenfluss Schritten. */
+/* Setzt Größe der Symbole in Datenfluss Schritten */
 .flow-step svg {
   width: 30px;
   height: 30px;
 }
 
-/* Setzt Abstand und Zeilenumbruch für den Schrittnamen. */
+/* Setzt Abstand und Zeilenumbruch für Schrittnamen*/
 .flow-step strong {
   display: block;
   margin-top: 0.6rem;
 }
 
-/* Formatiert die Zusatzinformation eines Datenfluss Schritts. */
+/* Formatiert Zusatzinformation eines Datenfluss Schritts*/
 .flow-step span {
   display: block;
   margin-top: 0.2rem;
@@ -1400,47 +1399,47 @@
   color: var(--color-white);
 }
 
-/* Setzt die Symbolfarbe im hervorgehobenen letzten Schritt. */
+/* Setzt Symbolfarbe im hervorgehobenen letzten Schritt */
 .flow-step-highlight svg {
   color: var(--color-accent-light);
 }
 
-/* Hellt die Zusatzinformation im hervorgehobenen Schritt auf. */
+/* Hellt Zusatzinformation hervorgehoben */
 .flow-step-highlight span {
   color: var(--color-footer-text);
 }
 
-/* Hebt die optionale Beschriftung des letzten Schritts ab. */
+/* Hebt die optionale Beschriftung des letzten Schritts ab */
 .flow-step-highlight .flow-step-caption {
   color: #b4b4b4;
 }
 
 /* ===== Sicherheit: Banner 7 (Häufige Fragen) ===== */
 
-/* Gibt dem FAQ Bereich vertikalen Abstand. */
+/* Gibt dem FAQ Bereich vertikalen Abstand */
 .faq {
   padding: 6rem 0;
 }
 
-/* Teilt den FAQ Bereich in Überschrift und Fragenliste. */
+/* Teilt FAQ Bereich in Überschrift und Fragenliste */
 .faq-inner {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
   gap: 4rem;
 }
 
-/* Trennt jede aufklappbare Frage durch Abstand und Linie. */
+/* Trennt aufklappbare Frage durch Abstand und Linie */
 .faq details {
   padding: 1.25rem 0;
   border-bottom: 1px solid var(--color-border-strong);
 }
 
-/* Entfernt den oberen Abstand bei der ersten FAQ Frage. */
+/* Entfernt den oberen Abstand bei der ersten FAQ Frage */
 .faq details:first-of-type {
   padding-top: 0;
 }
 
-/* Richtet Frage und Plus Symbol in der Zeile aus. */
+/* Richtet Frage und Plus Symbol in Zeile aus */
 .faq summary {
   list-style: none; /* Standard Dreieck ausblenden */
   display: flex;
@@ -1451,12 +1450,12 @@
   cursor: pointer;
 }
 
-/* Blendet das native Dreieck des Details Elements in WebKit aus. */
+/* Blendet das native Dreieck des Details Elements in WebKit aus */
 .faq summary::-webkit-details-marker {
   display: none;
 }
 
-/* Zeichnet das Plus Symbol zum Öffnen einer FAQ Frage. */
+/* Zeichnet Plus Symbol zum Öffnen einer FAQ Frage */
 .faq summary::after {
   content: "+";
   font-size: 1.5rem;
@@ -1465,12 +1464,12 @@
   color: var(--color-accent);
 }
 
-/* Tauscht das Plus beim Öffnen gegen ein Minus aus. */
+/* Tauscht Plus Öffnen gegen Minus aus */
 .faq details[open] summary::after {
   content: "×";
 }
 
-/* Begrenzt und formatiert die Antwort einer FAQ Frage. */
+/* Begrenzt und formatiert Antwort FAQ Frage */
 .faq details p {
   max-width: 520px;
   margin-top: 0.6rem;
@@ -1481,13 +1480,13 @@
 
 /* ===== Jetzt starten: Banner 1 (Download) ===== */
 
-/* Schneidet den Download Hero an seinen Außenkanten ab. */
+/* Schneidet den Download Hero Außenkanten ab */
 .start-hero {
   padding-top: 1.375rem;
   overflow: hidden; /* Handy unten abschneiden */
 }
 
-/* Ordnet Text und Gerätebild im Download Hero in zwei Spalten an. */
+/* Ordnet Text und Gerätebild im Download Hero in zwei Spalten */
 .start-hero-inner {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
@@ -1495,48 +1494,48 @@
   align-items: center;
 }
 
-/* Setzt Abstand unter den Text im Download Hero. */
+/* Setzt Abstand unter Text im Download Hero */
 .start-hero-text {
   padding-bottom: 4.5rem;
 }
 
-/* Skaliert die Download Hero Überschrift responsiv. */
+/* Skaliert Download Hero Überschrift responsiv */
 .start-hero h1 {
   font-size: clamp(3rem, 6.5vw, 5.25rem);
   line-height: 0.98;
 }
 
-/* Hebt den betonten Teil der Download Überschrift hervor. */
+/* Hebt betonten Teil der Download Überschrift hervor */
 .start-hero h1 em {
   color: var(--color-accent);
 }
 
-/* Begrenzt den Einleitungstext und setzt seine Abstände. */
+/* Begrenzt Einleitungstext und setzt Abstände */
 .start-hero .lead {
   max-width: 460px;
   margin: 1.4rem 0 2rem;
 }
 
-/* Zeigt einen dezenten Hinweis unter den Download Aktionen. */
+/* Zeigt einen dezenten Hinweis unter den Download Aktionen */
 .start-note {
   margin-top: 1rem;
   font-size: 0.8rem;
   color: var(--color-text-soft);
 }
 
-/* Reserviert Höhe für die Gerätegrafik im Download Hero. */
+/* Reserviert Höhe für Gerätegrafik Download Hero */
 .start-hero-image {
   height: 560px;
 }
 
-/* App Store  und Google Play Buttons */
+/* App Store und Google Play Buttons */
 .store-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
 }
 
-/* Gestaltet einen Store Download Button mit Icon und Text. */
+/* Gestalte Store Download Button mit Icon und Text */
 .store-button {
   display: flex;
   align-items: center;
@@ -1549,18 +1548,18 @@
   font-weight: 600;
 }
 
-/* Ändert die Store Buttonfarbe beim Darüberfahren. */
+/* Ändert die Store Buttonfarbe beim Darüberfahren */
 .store-button:hover {
   background-color: var(--color-primary);
 }
 
-/* Legt die Größe des Store Logos im Button fest. */
+/* Legt Größe des Store Logos Button fest */
 .store-button img {
   width: 26px;
   height: 26px;
 }
 
-/* Setzt den kleinen Zusatztext im Store Button. */
+/* Setzt kleinen Zusatztext Store Button */
 .store-button small {
   display: block;
   font-size: 0.7rem;
@@ -1573,28 +1572,28 @@
   justify-content: center;
 }
 
-/* Zeichnet Store Buttons für dunkle Hintergründe hell. */
+/* Zeichnet Store Buttons für dunkle Hintergründe hell */
 .store-buttons-light .store-button {
   background-color: var(--color-white);
   color: var(--color-dark);
 }
 
-/* Hebt helle Store Buttons beim Darüberfahren leicht ab. */
+/* Hebt helle Store Buttons beim Darüberfahren ab */
 .store-buttons-light .store-button:hover {
   background-color: var(--color-accent-bg);
 }
 
-/* Invertiert das Store Logo für die helle Button Variante. */
+/* Invertiert Store Logo für die helle Button Variante */
 .store-buttons-light .store-button img {
   filter: invert(1); /* weißes Logo schwarz färben */
 }
 
-/* Passt den Zusatztext an den hellen Store Button an. */
+/* zusatztext hellen Store Button anpassen */
 .store-buttons-light .store-button small {
   color: var(--color-text-soft);
 }
 
-/* QR Code Karte neben dem Handy */
+/* QR Code Karte neben Handy */
 .qr-card {
   position: absolute;
   left: 0;
@@ -1616,7 +1615,7 @@
   transform: none;
 }
 
-/* Formatiert die Beschriftung unter dem QR Code. */
+/* Formatiert Beschriftung unter QR Code */
 .qr-card span {
   display: block;
   margin-top: 0.5rem;
@@ -1626,20 +1625,20 @@
 
 /* ===== Jetzt starten: Banner 2 (Pläne) ===== */
 
-/* Gibt der Tarifübersicht Abstand und entfernt den Standard Außenabstand. */
+/* Gibt Tarifübersicht Abstand und entfernt Standard Außenabstand */
 .plans {
   margin-top: 0;
   padding: 6rem 0;
 }
 
-/* Radio Buttons unsichtbar, aber per Tastatur bedienbar */
+/* Radio Buttons unsichtbar, per Tastatur bedienbar */
 .billing-radio {
   position: absolute;
   opacity: 0;
   pointer-events: none;
 }
 
-/* Richtet Tarifüberschrift und Abrechnungsumschalter aus. */
+/* Richtet Tarifüberschrift und Abrechnungsumschalter aus */
 .plans-head {
   display: flex;
   justify-content: space-between;
@@ -1648,7 +1647,7 @@
   margin-bottom: 2.5rem;
 }
 
-/* Gestaltet den Umschalter für monatliche und jährliche Zahlung. */
+/* Gestaltet Umschalter für monatliche und jährliche Zahlung */
 .billing-switch {
   display: flex;
   padding: 4px;
@@ -1657,7 +1656,7 @@
   background-color: var(--color-white);
 }
 
-/* Macht jede Beschriftung des Tarif Umschalters anklickbar. */
+/* jede Beschriftung des Tarif Umschalters anklickbar */
 .billing-switch label {
   padding: 0.5rem 1rem;
   border-radius: 999px;
@@ -1665,7 +1664,7 @@
   cursor: pointer;
 }
 
-/* Hebt den Hinweis auf jährliche Ersparnis farblich hervor. */
+/* Hinweis auf jährliche Ersparnis farblich */
 .billing-switch em {
   font-style: normal;
   font-size: 0.75rem;
@@ -1710,14 +1709,14 @@
   display: inline;
 }
 
-/* Ordnet die Tarife in drei gleich breite Spalten. */
+/* Ordnet Tarife in drei gleich breite Spalten */
 .plans-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
-/* Ordnet Tarifdetails innerhalb einer einzelnen Tarifkarte an. */
+/* Tarifdetails innerhalb einzelnen Tarifkarte ordnen */
 .plan {
   position: relative;
   display: flex;
@@ -1727,20 +1726,20 @@
   background-color: var(--color-white);
 }
 
-/* Formatiert den Namen des Tarifs. */
+/* Formatiert Namen des Tarifs */
 .plan-name {
   font-weight: 600;
   font-size: 1rem;
 }
 
-/* Zeigt Zielgruppe und Abrechnungsintervall dezenter an. */
+/* Zeigt Zielgruppe und Abrechnungsintervall dezenter */
 .plan-for,
 .plan-per {
   font-size: 0.875rem;
   color: var(--color-text-soft);
 }
 
-/* Setzt den Preis groß und prominent in Serifenschrift. */
+/* Setzt Preis groß und prominent in Serifenschrift */
 .plan-price {
   margin: 1.4rem 0 0.1rem;
   font-family: var(--font-serif);
@@ -1748,7 +1747,7 @@
   letter-spacing: -0.02em;
 }
 
-/* Formatiert die kleinere Währungs  oder Intervallangabe am Preis. */
+/* Formatiert kleinere Währungs  oder Intervallangabe am Preis */
 .plan-price small {
   font-family: var(--font-sans);
   font-size: 0.95rem;
@@ -1756,7 +1755,7 @@
   color: var(--color-text-soft);
 }
 
-/* Trennt die Tarifleistungen vom Preisbereich und füllt den Kartenraum. */
+/* Trennt Tarifleistungen vom Preisbereich und füllt Kartenraum */
 .plan-list {
   flex: 1;
   list-style: none;
@@ -1765,44 +1764,44 @@
   border-top: 1px solid var(--color-border);
 }
 
-/* Ordnet jede Tarifleistung mit Platz für ihr Symbol an. */
+/* Ordnet jede Tarifleistung mit Platz für Symbol an */
 .plan-list li {
   display: flex;
   gap: 0.6rem;
   padding: 0.45rem 0;
 }
 
-/* Setzt ein grünes Häkchen vor jede enthaltene Tarifleistung. */
+/* Setzt grünes Häkchen vor jede enthaltene Tarifleistung */
 .plan-list li::before {
   content: "✓";
   font-weight: 700;
   color: var(--color-accent);
 }
 
-/* Hebt zusätzliche Tarifleistungen stärker hervor. */
+/* Hebt zusätzliche Tarifleistungen stärker hervor */
 .plan-list .plan-plus {
   font-weight: 600;
 }
 
-/* Ersetzt das Häkchen bei Zusatzleistungen durch ein Plus. */
+/* Ersetzt Häkchen Zusatzleistungen durch Plus. */
 .plan-list .plan-plus::before {
   content: "+";
 }
 
-/* Zieht den Aktionsbutton über die volle Breite der Tarifkarte. */
+/* Aktionsbutton volle Breite der Tarifkarte. */
 .plan .btn {
   justify-self: stretch;
   text-align: center;
 }
 
-/* Gestaltet Buttons als helle Variante mit farbigem Rahmen. */
+/* Gestaltet Buttons helle Variante mit farbigem Rahmen */
 .btn-outline {
   background-color: var(--color-white);
   color: var(--color-primary);
   border: 1.5px solid var(--color-primary);
 }
 
-/* Färbt den Text des Outline Buttons beim Hover weiß. */
+/* Färbt Text Outline Buttons Hover weiß */
 .btn-outline:hover {
   color: var(--color-white);
 }
@@ -1813,36 +1812,36 @@
   color: var(--color-white);
 }
 
-/* Passt Zusatztexte und Preisdetails an den dunklen hervorgehobenen Tarif an. */
+/* Zusatztexte und Preisdetails an dunklen hervorgehobenen Tarif */
 .plan-highlight .plan-for,
 .plan-highlight .plan-per,
 .plan-highlight .plan-price small {
   color: var(--color-footer-text);
 }
 
-/* Passt die Trennlinie der Leistungen im hervorgehobenen Tarif an. */
+/* Pass Trennlinie der Leistungen im hervorgehobenen Tarif */
 .plan-highlight .plan-list {
   border-top-color: var(--color-dark-accent);
 }
 
-/* Hellt die Leistungs Häkchen im hervorgehobenen Tarif auf. */
+/* Hellt die Leistungs Häkchen im hervorgehobenen Tarif */
 .plan-highlight .plan-list li::before {
   color: var(--color-accent-light);
 }
 
-/* Kehrt die Buttonfarben im hervorgehobenen Tarif um. */
+/* Kehrt die Buttonfarben im hervorgehobenen Tarif */
 .plan-highlight .btn {
   background-color: var(--color-white);
   color: var(--color-primary);
 }
 
-/* Ändert die Buttonfarben beim Hover im hervorgehobenen Tarif. */
+/* Ändert Buttonfarben beim Hover im hervorgehobenen Tarif */
 .plan-highlight .btn:hover {
   background-color: var(--color-accent);
   color: var(--color-white);
 }
 
-/* Positioniert das Empfehlungsschild in der Tarifkarte. */
+/* Positioniert Empfehlungsschild in der Tarifkarte */
 .plan-tag {
   position: absolute;
   top: 1.6rem;
@@ -1855,7 +1854,7 @@
   font-weight: 700;
 }
 
-/* Zeigt einen ergänzenden Hinweis unterhalb der Tarife. */
+/* Zeigt ergänzenden Hinweis unterhalb der Tarife */
 .plans-note {
   margin-top: 1.4rem;
   font-size: 0.8rem;
@@ -1864,12 +1863,12 @@
 
 /* ===== Jetzt starten: Banner 3 (Vergleich) ===== */
 
-/* Gibt der Tarifvergleichstabelle vertikalen Abstand. */
+/* Gibt der Tarifvergleichstabelle vertikalen Abstand */
 .compare {
   padding: 6rem 0;
 }
 
-/* Trennt die Vergleichsüberschrift von der Tabelle. */
+/* Trennt Vergleichsüberschrift von Tabelle */
 .compare h2 {
   margin-bottom: 2rem;
 }
@@ -1882,20 +1881,20 @@
   scrollbar-color: var(--color-border) transparent;
 }
 
-/* Macht den scrollbaren Tabellenbereich per Tastatur erkennbar. */
+/* scrollbaren Tabellenbereich per Tastatur erkennbar */
 .compare-scroll:focus-visible {
   outline: 2px solid var(--color-focus-ring);
   outline-offset: 2px;
 }
 
-/* Legt Mindestbreite und Layout der Tarifvergleichstabelle fest. */
+/* Mindestbreite und Layout der Tarifvergleichstabelle */
 .compare-table {
   width: 100%;
   min-width: 560px;
   border-collapse: collapse;
 }
 
-/* Formatiert die Kopfzellen der Vergleichstabelle. */
+/* Formatiert Kopfzellen der Vergleichstabelle */
 .compare-table thead th {
   padding: 0.9rem 0.75rem;
   text-align: left;
@@ -1903,7 +1902,7 @@
   border-bottom: 2px solid var(--color-primary);
 }
 
-/* Formatiert die Zeilenüberschriften im Tabellenkörper. */
+/* Formatiert die Zeilenüberschriften im Tabellenkörper */
 .compare-table tbody th {
   padding: 0.9rem 0.75rem;
   text-align: left;
@@ -1912,12 +1911,12 @@
   border-bottom: 1px solid var(--color-border);
 }
 
-/* Trennt die Datenzellen der Vergleichstabelle durch Linien. */
+/* Datenzellen der Vergleichstabelle Linien */
 .compare-table tbody td {
   border-bottom: 1px solid var(--color-border);
 }
 
-/* Hebt Gruppenüberschriften der Vergleichstabelle typografisch hervor. */
+/* Gruppenüberschriften der Vergleichstabelle typografisch */
 .compare-table .compare-group th {
   padding-top: 1.75rem;
   font-family: var(--font-serif);
@@ -1926,30 +1925,30 @@
   border-bottom: 1px solid var(--color-border-strong);
 }
 
-/* Zentriert Tarifspalten und begrenzt ihre Breite. */
+/* Zentriert Tarifspalten und begrenzt ihre Breite */
 .compare-table th:not(:first-child),
 .compare-table td:not(:first-child) {
   width: 17%;
   text-align: center;
 }
 
-/* Markiert die hervorgehobene Tarifspalte. */
+/* Markiert die hervorgehobene Tarifspalte */
 .compare-table .col-highlight {
   background-color: #bedacc;
 }
 
-/* Färbt vorhandene Leistungsmerkmale grün. */
+/* Färbt vorhandene Leistungsmerkmale grün */
 .compare-table .yes {
   font-weight: 700;
   color: var(--color-accent);
 }
 
-/* Dämpft nicht enthaltene Leistungsmerkmale. */
+/* Dämpft nicht enthaltene Leistungsmerkmale */
 .compare-table .no {
   color: var(--color-border-strong);
 }
 
-/* Stellt Gruppenzeilen im Tabellenkörper größer und serif dar. */
+/* Gruppenzeilen im Tabellenkörper größer und serif */
 .compare-group td {
   padding-top: 1.75rem;
   font-family: var(--font-serif);
@@ -1960,14 +1959,14 @@
 
 /* ===== Jetzt starten: Banner 4 (Fragen, nutzt .faq von Sicherheit) ===== */
 
-/* Färbt die FAQ Variante der Download Seite grau. */
+/* Färbt FAQ grau */
 .faq-grey {
   background-color: var(--color-surface);
 }
 
 /* ===== Dunkler Abschluss (Sicherheit Banner 8, Über uns Banner 6, Jetzt starten Banner 5) ===== */
 
-/* Gestaltet den gemeinsamen Abschlussbereich mit dunklem Hintergrund. */
+/* Gestaltet gemeinsamen Abschlussbereich mit dunklem Hintergrund */
 .cta-dark {
   padding: 6rem 0;
   text-align: center;
@@ -1975,31 +1974,31 @@
   color: var(--color-white);
 }
 
-/* Skaliert die Überschrift des dunklen Abschlussbereichs. */
+/* Skaliert Überschrift des dunklen Abschlussbereichs */
 .cta-dark h2 {
   font-size: clamp(2.25rem, 5vw, 3.5rem);
   margin-bottom: 1rem;
 }
 
-/* Formatiert den Einleitungstext im dunklen Abschlussbereich. */
+/* Formatiert Einleitungstext im dunklen Abschlussbereich */
 .cta-dark p {
   margin-bottom: 2rem;
   font-size: 1.1rem;
   color: var(--color-dark-muted);
 }
 
-/* Zentriert die Aktionslinks im dunklen Abschlussbereich. */
+/* Zentriert Aktionslinks dunklen Abschlussbereich */
 .cta-dark .hero-actions {
   justify-content: center;
 }
 
-/* Stellt den Abschlussbutton hell auf dunklem Hintergrund dar. */
+/* Abschlussbutton hell auf dunklem Hintergrund */
 .cta-dark .btn {
   background-color: var(--color-white);
   color: var(--color-dark);
 }
 
-/* Hebt den hellen Abschlussbutton beim Darüberfahren grün hervor. */
+/* hellen Abschlussbutton beim Darüberfahren grün */
 .cta-dark .btn:hover {
   background-color: var(--color-accent);
   color: var(--color-white);
@@ -2007,33 +2006,33 @@
 
 /* ===== Rechtliches (Impressum & Datenschutz) ===== */
 
-/* Setzt Abstand unter der Hauptüberschrift rechtlicher Seiten. */
+/* Setzt Abstand */
 .legal h1 {
   margin-bottom: 2rem;
 }
 
-/* Formatiert Unterüberschriften und schafft Abstand zwischen Themen. */
+/* Formatiert Unterüberschriften */
 .legal h2 {
   font-size: 1.25rem;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
 }
 
-/* Verbessert Zeilenabstand und Lesbarkeit rechtlicher Texte. */
+/* Verbessert Zeilenabstand und Lesbarkeit rechtlicher Texte */
 .legal p {
   line-height: 1.7;
 }
 
 /* ===== Footer ===== */
 
-/* Gestaltet den Fußbereich mit Hintergrund und Innenabstand. */
+/* Gestaltet Fußbereich mit Hintergrund und Innenabstand */
 .footer {
   background-color: var(--color-footer);
   color: var(--color-white);
   padding: 2rem 0;
 }
 
-/* Ordnet Logo und Navigation im Footer auf einer Zeile an. */
+/* Ordnet Logo und Navigation im Footer auf eine Zeile */
 .footer-inner {
   display: flex;
   align-items: center;
@@ -2041,26 +2040,26 @@
   gap: 1.5rem;
 }
 
-/* Setzt die Wortmarke im Footer in der Serifenschrift. */
+/* die Wortmarke im Footer in Serifenschrift */
 .footer-logo {
   font-family: var(--font-serif);
   font-size: 1.25rem;
 }
 
-/* Ordnet die Footer Links mit gleichmäßigem Abstand an. */
+/* Footer Links mit gleichmäßigem Abstand */
 .footer-nav {
   display: flex;
   gap: 1.5rem;
 }
 
-/* Zeigt Footer Links und Copyright Hinweis in zurückhaltender Farbe. */
+/* Zeigt Footer Links und Copyright Hinweis in anderre Farbe */
 .footer-nav a,
 .footer-copy {
   font-size: 0.8rem;
   color: var(--color-footer-text);
 }
 
-/* Hellt einen Footer Link beim Darüberfahren auf. */
+/* Hellt Footer Link beim Darüberfahren auf */
 .footer-nav a:hover {
   color: var(--color-white);
 }
